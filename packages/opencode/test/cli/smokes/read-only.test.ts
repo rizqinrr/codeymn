@@ -1,4 +1,4 @@
-// Tier-A smoke tests for read-only commands. Each test asserts only that the
+﻿// Tier-A smoke tests for read-only commands. Each test asserts only that the
 // command exits 0 and produces *some* output in the isolated harness env.
 //
 // These are not behavioral tests — they're the cheapest possible signal that
@@ -20,7 +20,7 @@ import { cliIt } from "../../lib/cli-process"
 
 describe("opencode read-only commands (smoke)", () => {
   // `mcp list` reads MCP server config and pings each one. With the empty
-  // OPENCODE_CONFIG_CONTENT={} we provide, no servers should be configured
+  // CODEYMN_CONFIG_CONTENT={} we provide, no servers should be configured
   // and the command should report that cleanly.
   cliIt.live(
     "mcp list: exits 0",
@@ -75,7 +75,7 @@ describe("opencode read-only commands (smoke)", () => {
     60_000,
   )
 
-  // `session list` reads the session DB. Fresh OPENCODE_TEST_HOME means
+  // `session list` reads the session DB. Fresh CODEYMN_TEST_HOME means
   // empty DB. Exit 0 with no sessions.
   cliIt.live(
     "session list: exits 0",
@@ -100,7 +100,7 @@ describe("opencode read-only commands (smoke)", () => {
 
   // `db path` prints the DB file location. Under harness isolation the DB
   // resolves to SQLite's `:memory:` (no on-disk pollution between tests);
-  // in production it'd be a path under OPENCODE_TEST_HOME / XDG_DATA_HOME.
+  // in production it'd be a path under CODEYMN_TEST_HOME / XDG_DATA_HOME.
   // Accept either form — both prove the resolver ran without crashing.
   cliIt.live(
     "db path: exits 0 and prints a path or :memory:",

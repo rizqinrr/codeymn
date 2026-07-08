@@ -1,4 +1,4 @@
-import { execFile } from "node:child_process"
+﻿import { execFile } from "node:child_process"
 import path from "node:path"
 import { fileURLToPath } from "node:url"
 import { promisify } from "node:util"
@@ -27,7 +27,7 @@ async function signWindows(configuration: { path: string }) {
 }
 
 const channel = (() => {
-  const raw = process.env.OPENCODE_CHANNEL
+  const raw = process.env.CODEYMN_CHANNEL
   if (raw === "dev" || raw === "beta" || raw === "prod") return raw
   return "dev"
 })()
@@ -39,7 +39,7 @@ const APP_IDS = {
 } as const
 
 const getBase = (appId: string): Configuration => ({
-  artifactName: "opencode-desktop-${os}-${arch}.${ext}",
+  artifactName: "codeymn-desktop-${os}-${arch}.${ext}",
   directories: {
     output: "dist",
     buildResources: "resources",
@@ -74,8 +74,8 @@ const getBase = (appId: string): Configuration => ({
     sign: true,
   },
   protocols: {
-    name: "OpenCode",
-    schemes: ["opencode"],
+    name: "Codeymn",
+    schemes: ["codeymn"],
   },
   win: {
     icon: `resources/icons/icon.ico`,
@@ -115,29 +115,29 @@ function getConfig() {
       return {
         ...base,
         appId,
-        productName: "OpenCode Dev",
-        rpm: { packageName: "opencode-dev" },
+        productName: "Codeymn Dev",
+        rpm: { packageName: "codeymn-dev" },
       }
     }
     case "beta": {
       return {
         ...base,
         appId,
-        productName: "OpenCode Beta",
-        protocols: { name: "OpenCode Beta", schemes: ["opencode"] },
-        publish: { provider: "github", owner: "anomalyco", repo: "opencode-beta", channel: "latest" },
-        rpm: { packageName: "opencode-beta" },
+        productName: "Codeymn Beta",
+        protocols: { name: "Codeymn Beta", schemes: ["codeymn"] },
+        publish: { provider: "github", owner: "rizqinrr", repo: "codeymn-beta", channel: "latest" },
+        rpm: { packageName: "codeymn-beta" },
       }
     }
     case "prod": {
       return {
         ...base,
         appId,
-        productName: "OpenCode",
-        protocols: { name: "OpenCode", schemes: ["opencode"] },
-        publish: { provider: "github", owner: "anomalyco", repo: "opencode", channel: "latest" },
+        productName: "Codeymn",
+        protocols: { name: "Codeymn", schemes: ["codeymn"] },
+        publish: { provider: "github", owner: "rizqinrr", repo: "codeymn", channel: "latest" },
         deb: { fpm: [legacyDesktopEntryFpm] },
-        rpm: { packageName: "opencode", fpm: [legacyDesktopEntryFpm] },
+        rpm: { packageName: "codeymn", fpm: [legacyDesktopEntryFpm] },
       }
     }
   }

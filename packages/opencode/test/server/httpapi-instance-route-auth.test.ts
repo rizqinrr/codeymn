@@ -1,4 +1,4 @@
-import { afterEach, describe, expect, test } from "bun:test"
+﻿import { afterEach, describe, expect, test } from "bun:test"
 import { ConfigProvider, Layer } from "effect"
 import { HttpRouter } from "effect/unstable/http"
 import { EventPaths } from "../../src/server/routes/instance/httpapi/groups/event"
@@ -15,8 +15,8 @@ function app(input: { password?: string; username?: string }) {
       Layer.provide(
         ConfigProvider.layer(
           ConfigProvider.fromUnknown({
-            OPENCODE_SERVER_PASSWORD: input.password,
-            OPENCODE_SERVER_USERNAME: input.username,
+            CODEYMN_SERVER_PASSWORD: input.password,
+            CODEYMN_SERVER_USERNAME: input.username,
           }),
         ),
       ),

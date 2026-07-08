@@ -1,4 +1,4 @@
-import { ConfigProvider, Effect, Layer } from "effect"
+﻿import { ConfigProvider, Effect, Layer } from "effect"
 import { HttpRouter } from "effect/unstable/http"
 import { parse } from "./assertions"
 import { runtime, type Runtime } from "./runtime"
@@ -60,7 +60,7 @@ function app(modules: Runtime, options: CallOptions) {
     modules.HttpApiApp.routes.pipe(
       Layer.provide(
         ConfigProvider.layer(
-          ConfigProvider.fromUnknown({ OPENCODE_SERVER_PASSWORD: password, OPENCODE_SERVER_USERNAME: username }),
+          ConfigProvider.fromUnknown({ CODEYMN_SERVER_PASSWORD: password, CODEYMN_SERVER_USERNAME: username }),
         ),
       ),
     ),

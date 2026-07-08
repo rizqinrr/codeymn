@@ -1,4 +1,4 @@
-import { expect } from "bun:test"
+﻿import { expect } from "bun:test"
 import { LayerNode } from "@opencode-ai/core/effect/layer-node"
 import { Provider } from "../../src/provider/provider"
 
@@ -29,7 +29,7 @@ const withEnv = <A, E, R>(values: Record<string, string>, effect: Effect.Effect<
 const withAuth = <A, E, R>(metadata: Record<string, string> | undefined, effect: Effect.Effect<A, E, R>) =>
   withEnv(
     {
-      OPENCODE_AUTH_CONTENT: JSON.stringify({
+      CODEYMN_AUTH_CONTENT: JSON.stringify({
         digitalocean: {
           type: "api",
           key: "sk_do_test",

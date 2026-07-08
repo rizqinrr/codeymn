@@ -1,4 +1,4 @@
-import { describe, expect } from "bun:test"
+﻿import { describe, expect } from "bun:test"
 import type {
   CloseSessionResponse,
   ListSessionsResponse,
@@ -30,7 +30,7 @@ describe("opencode acp lifecycle subprocess", () => {
       Effect.gen(function* () {
         const acp = yield* createAcpClient(
           { opencode },
-          { OPENCODE_CONFIG_CONTENT: JSON.stringify(verifierConfig(llm.url)) },
+          { CODEYMN_CONFIG_CONTENT: JSON.stringify(verifierConfig(llm.url)) },
         )
         const initialized = yield* initialize(acp)
         expect(initialized.agentCapabilities?.sessionCapabilities?.close).toEqual({})
@@ -47,7 +47,7 @@ describe("opencode acp lifecycle subprocess", () => {
       Effect.gen(function* () {
         const acp = yield* createAcpClient(
           { opencode },
-          { OPENCODE_CONFIG_CONTENT: JSON.stringify(verifierConfig(llm.url)) },
+          { CODEYMN_CONFIG_CONTENT: JSON.stringify(verifierConfig(llm.url)) },
         )
         const initialized = yield* initialize(acp)
         expect(initialized.agentCapabilities?.loadSession).toBe(true)
@@ -71,7 +71,7 @@ describe("opencode acp lifecycle subprocess", () => {
       Effect.gen(function* () {
         const acp = yield* createAcpClient(
           { opencode },
-          { OPENCODE_CONFIG_CONTENT: JSON.stringify(verifierConfig(llm.url)) },
+          { CODEYMN_CONFIG_CONTENT: JSON.stringify(verifierConfig(llm.url)) },
         )
         yield* initialize(acp)
         const session = yield* newSession(acp, home)
@@ -99,7 +99,7 @@ describe("opencode acp lifecycle subprocess", () => {
       Effect.gen(function* () {
         const acp = yield* createAcpClient(
           { opencode },
-          { OPENCODE_CONFIG_CONTENT: JSON.stringify(verifierConfig(llm.url)) },
+          { CODEYMN_CONFIG_CONTENT: JSON.stringify(verifierConfig(llm.url)) },
         )
         yield* initialize(acp)
         const session = yield* newSession(acp, home)

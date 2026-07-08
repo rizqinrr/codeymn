@@ -1,4 +1,4 @@
-export * as ConfigManaged from "./managed"
+﻿export * as ConfigManaged from "./managed"
 
 import { existsSync } from "fs"
 import os from "os"
@@ -22,14 +22,14 @@ function systemManagedConfigDir(): string {
     case "darwin":
       return "/Library/Application Support/opencode"
     case "win32":
-      return path.join(process.env.ProgramData || "C:\\ProgramData", "opencode")
+      return path.join(process.env.ProgramData || "C:\\ProgramData", "codeymn")
     default:
       return "/etc/opencode"
   }
 }
 
 export function managedConfigDir() {
-  return process.env.OPENCODE_TEST_MANAGED_CONFIG_DIR || systemManagedConfigDir()
+  return process.env.CODEYMN_TEST_MANAGED_CONFIG_DIR || systemManagedConfigDir()
 }
 
 export function parseManagedPlist(json: string): string {

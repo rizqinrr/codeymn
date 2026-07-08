@@ -1,4 +1,4 @@
-import { $ } from "bun"
+﻿import { $ } from "bun"
 import { describe, expect } from "bun:test"
 import fs from "fs/promises"
 import path from "path"
@@ -30,8 +30,8 @@ const configLayer = Layer.succeed(
 
 const flagsLayer = ConfigProvider.layer(
   ConfigProvider.fromUnknown({
-    OPENCODE_EXPERIMENTAL_FILEWATCHER: "true",
-    OPENCODE_EXPERIMENTAL_DISABLE_FILEWATCHER: "false",
+    CODEYMN_EXPERIMENTAL_FILEWATCHER: "true",
+    CODEYMN_EXPERIMENTAL_DISABLE_FILEWATCHER: "false",
   }),
 )
 

@@ -1,4 +1,4 @@
-import { PermissionV1 } from "@opencode-ai/core/v1/permission"
+﻿import { PermissionV1 } from "@opencode-ai/core/v1/permission"
 import { describe, expect } from "bun:test"
 import { LayerNode } from "@opencode-ai/core/effect/layer-node"
 import { Cause, Effect, Exit, Layer } from "effect"
@@ -542,7 +542,7 @@ describe("tool.shell permissions", () => {
           item,
           Effect.acquireUseRelease(
             Effect.sync(() => {
-              const key = "OPENCODE_TEST_MISSING"
+              const key = "CODEYMN_TEST_MISSING"
               const prev = process.env[key]
               delete process.env[key]
               return { key, prev }

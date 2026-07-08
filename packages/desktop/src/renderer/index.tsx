@@ -1,4 +1,4 @@
-// @refresh reload
+﻿// @refresh reload
 
 import {
   ACCEPTED_FILE_EXTENSIONS,
@@ -50,7 +50,7 @@ if (import.meta.env.VITE_SENTRY_DSN) {
         (i) =>
           i.name !== "Breadcrumbs" &&
           !(
-            import.meta.env.OPENCODE_CHANNEL === "prod" &&
+            import.meta.env.CODEYMN_CHANNEL === "prod" &&
             (i.name === "GlobalHandlers" || i.name === "BrowserApiErrors")
           ),
       )

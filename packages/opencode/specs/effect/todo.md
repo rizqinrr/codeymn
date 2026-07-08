@@ -1,4 +1,4 @@
-# Effect TODO
+﻿# Effect TODO
 
 Short roadmap for Effect cleanup in `packages/opencode`.
 
@@ -207,7 +207,7 @@ Problems to reduce:
 - Importing the module creates directories.
 - Tests override `Global.Path` by mutating exported module state.
 - Most callers use `Global.Path` directly instead of the Effect service.
-- `Global.make()` still reads mutable `Flag.OPENCODE_CONFIG_DIR`.
+- `Global.make()` still reads mutable `Flag.CODEYMN_CONFIG_DIR`.
 
 Next PR candidates:
 

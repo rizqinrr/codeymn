@@ -1,4 +1,4 @@
-import { PermissionV1 } from "@opencode-ai/core/v1/permission"
+﻿import { PermissionV1 } from "@opencode-ai/core/v1/permission"
 import { NodeHttpServer, NodeServices } from "@effect/platform-node"
 import { Flag } from "@opencode-ai/core/flag/flag"
 import { describe, expect } from "bun:test"
@@ -24,12 +24,12 @@ import { testEffect } from "../lib/effect"
 // repeat it.
 const testStateLayer = Layer.effectDiscard(
   Effect.gen(function* () {
-    const originalWorkspaces = Flag.OPENCODE_EXPERIMENTAL_WORKSPACES
-    Flag.OPENCODE_EXPERIMENTAL_WORKSPACES = true
+    const originalWorkspaces = Flag.CODEYMN_EXPERIMENTAL_WORKSPACES
+    Flag.CODEYMN_EXPERIMENTAL_WORKSPACES = true
     yield* Effect.promise(() => resetDatabase())
     yield* Effect.addFinalizer(() =>
       Effect.promise(async () => {
-        Flag.OPENCODE_EXPERIMENTAL_WORKSPACES = originalWorkspaces
+        Flag.CODEYMN_EXPERIMENTAL_WORKSPACES = originalWorkspaces
         await resetDatabase()
       }),
     )
@@ -75,11 +75,11 @@ describe("instance HttpApi", () => {
 
   it.live("emits a sync fence header for fixed-workspace mutations", () =>
     Effect.gen(function* () {
-      const originalWorkspaceID = Flag.OPENCODE_WORKSPACE_ID
-      Flag.OPENCODE_WORKSPACE_ID = WorkspaceV2.ID.ascending()
+      const originalWorkspaceID = Flag.CODEYMN_WORKSPACE_ID
+      Flag.CODEYMN_WORKSPACE_ID = WorkspaceV2.ID.ascending()
       yield* Effect.addFinalizer(() =>
         Effect.sync(() => {
-          Flag.OPENCODE_WORKSPACE_ID = originalWorkspaceID
+          Flag.CODEYMN_WORKSPACE_ID = originalWorkspaceID
         }),
       )
 
@@ -97,11 +97,11 @@ describe("instance HttpApi", () => {
 
   it.live("does not emit sync fence headers for fixed-workspace reads or no-op mutations", () =>
     Effect.gen(function* () {
-      const originalWorkspaceID = Flag.OPENCODE_WORKSPACE_ID
-      Flag.OPENCODE_WORKSPACE_ID = WorkspaceV2.ID.ascending()
+      const originalWorkspaceID = Flag.CODEYMN_WORKSPACE_ID
+      Flag.CODEYMN_WORKSPACE_ID = WorkspaceV2.ID.ascending()
       yield* Effect.addFinalizer(() =>
         Effect.sync(() => {
-          Flag.OPENCODE_WORKSPACE_ID = originalWorkspaceID
+          Flag.CODEYMN_WORKSPACE_ID = originalWorkspaceID
         }),
       )
 

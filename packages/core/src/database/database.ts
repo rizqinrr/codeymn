@@ -1,4 +1,4 @@
-export * as Database from "./database"
+﻿export * as Database from "./database"
 
 import { EffectDrizzleSqlite } from "@opencode-ai/effect-drizzle-sqlite"
 import { layer as sqliteLayer } from "#sqlite"
@@ -41,14 +41,14 @@ export function layerFromPath(filename: string) {
 }
 
 export function path() {
-  if (Flag.OPENCODE_DB) {
-    if (Flag.OPENCODE_DB === ":memory:" || isAbsolute(Flag.OPENCODE_DB)) return Flag.OPENCODE_DB
-    return join(Global.Path.data, Flag.OPENCODE_DB)
+  if (Flag.CODEYMN_DB) {
+    if (Flag.CODEYMN_DB === ":memory:" || isAbsolute(Flag.CODEYMN_DB)) return Flag.CODEYMN_DB
+    return join(Global.Path.data, Flag.CODEYMN_DB)
   }
   if (
     ["latest", "beta", "prod"].includes(InstallationChannel) ||
-    process.env.OPENCODE_DISABLE_CHANNEL_DB === "1" ||
-    process.env.OPENCODE_DISABLE_CHANNEL_DB === "true"
+    process.env.CODEYMN_DISABLE_CHANNEL_DB === "1" ||
+    process.env.CODEYMN_DISABLE_CHANNEL_DB === "true"
   )
     return join(Global.Path.data, "opencode.db")
   return join(Global.Path.data, `opencode-${InstallationChannel.replace(/[^a-zA-Z0-9._-]/g, "-")}.db`)

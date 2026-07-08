@@ -1,4 +1,4 @@
-import { describe, expect } from "bun:test"
+﻿import { describe, expect } from "bun:test"
 import type { SessionNotification } from "@agentclientprotocol/sdk"
 import { Effect } from "effect"
 import { mkdir } from "node:fs/promises"
@@ -16,7 +16,7 @@ describe("opencode acp skills subprocess", () => {
         yield* Effect.promise(() => Bun.write(path.join(skills, "verifier-skill", "SKILL.md"), verifierSkill))
         const acp = yield* createAcpClient(
           { opencode },
-          { OPENCODE_CONFIG_CONTENT: JSON.stringify(verifierConfig(llm.url, skills)) },
+          { CODEYMN_CONFIG_CONTENT: JSON.stringify(verifierConfig(llm.url, skills)) },
         )
         yield* initialize(acp)
         const session = yield* newSession(acp, home)

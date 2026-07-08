@@ -1,4 +1,4 @@
-import { describe, expect } from "bun:test"
+﻿import { describe, expect } from "bun:test"
 import type { PromptResponse } from "@agentclientprotocol/sdk"
 import { Effect } from "effect"
 import { writeFile } from "node:fs/promises"
@@ -18,7 +18,7 @@ describe("opencode acp prompt content subprocess", () => {
         yield* Effect.promise(() => writeFile(path.join(home, "README.md"), "# ACP content smoke\n"))
         const acp = yield* createAcpClient(
           { opencode },
-          { OPENCODE_CONFIG_CONTENT: JSON.stringify(promptContentConfig(llm.url)) },
+          { CODEYMN_CONFIG_CONTENT: JSON.stringify(promptContentConfig(llm.url)) },
         )
         yield* initialize(acp)
         const session = yield* newSession(acp, home)

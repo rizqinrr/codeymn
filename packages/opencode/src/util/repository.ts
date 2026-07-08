@@ -1,4 +1,4 @@
-import path from "path"
+﻿import path from "path"
 import { fileURLToPath } from "url"
 import { Schema } from "effect"
 import { Global } from "@opencode-ai/core/global"
@@ -97,7 +97,7 @@ function withSlash(input: string) {
 }
 
 function githubRemote(pathname: string) {
-  const base = process.env.OPENCODE_REPO_CLONE_GITHUB_BASE_URL
+  const base = process.env.CODEYMN_REPO_CLONE_GITHUB_BASE_URL
   if (!base) return `https://github.com/${pathname}.git`
   return new URL(`${pathname}.git`, withSlash(base)).href
 }

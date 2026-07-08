@@ -1,4 +1,4 @@
-export * as ServerAuth from "./auth"
+﻿export * as ServerAuth from "./auth"
 
 import { ConfigService } from "@/effect/config-service"
 import { Flag } from "@opencode-ai/core/flag/flag"
@@ -15,8 +15,8 @@ export type DecodedCredentials = {
 }
 
 export class Config extends ConfigService.Service<Config>()("@opencode/ServerAuthConfig", {
-  password: EffectConfig.string("OPENCODE_SERVER_PASSWORD").pipe(EffectConfig.option),
-  username: EffectConfig.string("OPENCODE_SERVER_USERNAME").pipe(EffectConfig.withDefault("opencode")),
+  password: EffectConfig.string("CODEYMN_SERVER_PASSWORD").pipe(EffectConfig.option),
+  username: EffectConfig.string("CODEYMN_SERVER_USERNAME").pipe(EffectConfig.withDefault("codeymn")),
 }) {}
 
 export type Info = Context.Service.Shape<typeof Config>
@@ -34,10 +34,10 @@ export function authorized(credentials: DecodedCredentials, config: Info) {
 }
 
 export function header(credentials?: Credentials) {
-  const password = credentials?.password ?? Flag.OPENCODE_SERVER_PASSWORD
+  const password = credentials?.password ?? Flag.CODEYMN_SERVER_PASSWORD
   if (!password) return undefined
 
-  const username = credentials?.username ?? Flag.OPENCODE_SERVER_USERNAME ?? "opencode"
+  const username = credentials?.username ?? Flag.CODEYMN_SERVER_USERNAME ?? "codeymn"
   return `Basic ${Buffer.from(`${username}:${password}`).toString("base64")}`
 }
 

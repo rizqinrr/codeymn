@@ -1,4 +1,4 @@
-import { NodeHttpServer, NodeServices } from "@effect/platform-node"
+﻿import { NodeHttpServer, NodeServices } from "@effect/platform-node"
 import { Flag } from "@opencode-ai/core/flag/flag"
 import { describe, expect } from "bun:test"
 import { Config, ConfigProvider, Effect, Layer } from "effect"
@@ -13,13 +13,13 @@ import { testEffect } from "../lib/effect"
 const testStateLayer = Layer.effectDiscard(
   Effect.gen(function* () {
     const original = {
-      OPENCODE_SERVER_PASSWORD: Flag.OPENCODE_SERVER_PASSWORD,
+      CODEYMN_SERVER_PASSWORD: Flag.CODEYMN_SERVER_PASSWORD,
     }
-    Flag.OPENCODE_SERVER_PASSWORD = "secret"
+    Flag.CODEYMN_SERVER_PASSWORD = "secret"
     yield* Effect.promise(() => resetDatabase())
     yield* Effect.addFinalizer(() =>
       Effect.promise(async () => {
-        Flag.OPENCODE_SERVER_PASSWORD = original.OPENCODE_SERVER_PASSWORD
+        Flag.CODEYMN_SERVER_PASSWORD = original.CODEYMN_SERVER_PASSWORD
         await resetDatabase()
       }),
     )
@@ -64,7 +64,7 @@ describe("HttpApi CORS", () => {
     Effect.gen(function* () {
       const handler = HttpRouter.toWebHandler(
         HttpApiApp.createRoutes().pipe(
-          Layer.provide(ConfigProvider.layer(ConfigProvider.fromUnknown({ OPENCODE_SERVER_PASSWORD: "secret" }))),
+          Layer.provide(ConfigProvider.layer(ConfigProvider.fromUnknown({ CODEYMN_SERVER_PASSWORD: "secret" }))),
         ),
         { disableLogger: true },
       ).handler

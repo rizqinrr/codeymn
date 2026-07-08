@@ -1,45 +1,45 @@
 <p align="center">
-  <a href="https://opencode.ai">
+  <a href="https://Codeymn.ai">
     <picture>
       <source srcset="packages/console/app/src/asset/logo-ornate-dark.svg" media="(prefers-color-scheme: dark)">
       <source srcset="packages/console/app/src/asset/logo-ornate-light.svg" media="(prefers-color-scheme: light)">
-      <img src="packages/console/app/src/asset/logo-ornate-light.svg" alt="OpenCode logo">
+      <img src="packages/console/app/src/asset/logo-ornate-light.svg" alt="Codeymn logo">
     </picture>
   </a>
 </p>
-<p align="center">Açık kaynaklı yapay zeka kodlama asistanı.</p>
+<p align="center">A�ik kaynakli yapay zeka kodlama asistani.</p>
 <p align="center">
-  <a href="https://opencode.ai/discord"><img alt="Discord" src="https://img.shields.io/discord/1391832426048651334?style=flat-square&label=discord" /></a>
-  <a href="https://www.npmjs.com/package/opencode-ai"><img alt="npm" src="https://img.shields.io/npm/v/opencode-ai?style=flat-square" /></a>
-  <a href="https://github.com/anomalyco/opencode/actions/workflows/publish.yml"><img alt="Build status" src="https://img.shields.io/github/actions/workflow/status/anomalyco/opencode/publish.yml?style=flat-square&branch=dev" /></a>
+  <a href="https://Codeymn.ai/discord"><img alt="Discord" src="https://img.shields.io/discord/1391832426048651334?style=flat-square&label=discord" /></a>
+  <a href="https://www.npmjs.com/package/Codeymn-ai"><img alt="npm" src="https://img.shields.io/npm/v/Codeymn-ai?style=flat-square" /></a>
+  <a href="https://github.com/anomalyco/Codeymn/actions/workflows/publish.yml"><img alt="Build status" src="https://img.shields.io/github/actions/workflow/status/anomalyco/Codeymn/publish.yml?style=flat-square&branch=dev" /></a>
 </p>
 
 <p align="center">
   <a href="README.md">English</a> |
-  <a href="README.zh.md">简体中文</a> |
-  <a href="README.zht.md">繁體中文</a> |
-  <a href="README.ko.md">한국어</a> |
+  <a href="README.zh.md">????</a> |
+  <a href="README.zht.md">????</a> |
+  <a href="README.ko.md">???</a> |
   <a href="README.de.md">Deutsch</a> |
-  <a href="README.es.md">Español</a> |
-  <a href="README.fr.md">Français</a> |
+  <a href="README.es.md">Espa�ol</a> |
+  <a href="README.fr.md">Fran�ais</a> |
   <a href="README.it.md">Italiano</a> |
   <a href="README.da.md">Dansk</a> |
-  <a href="README.ja.md">日本語</a> |
+  <a href="README.ja.md">???</a> |
   <a href="README.pl.md">Polski</a> |
-  <a href="README.ru.md">Русский</a> |
+  <a href="README.ru.md">???????</a> |
   <a href="README.bs.md">Bosanski</a> |
-  <a href="README.ar.md">العربية</a> |
+  <a href="README.ar.md">???????</a> |
   <a href="README.no.md">Norsk</a> |
-  <a href="README.br.md">Português (Brasil)</a> |
-  <a href="README.th.md">ไทย</a> |
-  <a href="README.tr.md">Türkçe</a> |
-  <a href="README.uk.md">Українська</a> |
-  <a href="README.bn.md">বাংলা</a> |
-  <a href="README.gr.md">Ελληνικά</a> |
-  <a href="README.vi.md">Tiếng Việt</a>
+  <a href="README.br.md">Portugu�s (Brasil)</a> |
+  <a href="README.th.md">???</a> |
+  <a href="README.tr.md">T�rk�e</a> |
+  <a href="README.uk.md">??????????</a> |
+  <a href="README.bn.md">?????</a> |
+  <a href="README.gr.md">????????</a> |
+  <a href="README.vi.md">Ti?ng Vi?t</a>
 </p>
 
-[![OpenCode Terminal UI](packages/web/src/assets/lander/screenshot.png)](https://opencode.ai)
+[![Codeymn Terminal UI](packages/web/src/assets/lander/screenshot.png)](https://Codeymn.ai)
 
 ---
 
@@ -47,83 +47,83 @@
 
 ```bash
 # YOLO
-curl -fsSL https://opencode.ai/install | bash
+curl -fsSL https://Codeymn.ai/install | bash
 
-# Paket yöneticileri
-npm i -g opencode-ai@latest        # veya bun/pnpm/yarn
-scoop install opencode             # Windows
-choco install opencode             # Windows
-brew install anomalyco/tap/opencode # macOS ve Linux (önerilir, her zaman güncel)
-brew install opencode              # macOS ve Linux (resmi brew formülü, daha az güncellenir)
-sudo pacman -S opencode            # Arch Linux (Stable)
-paru -S opencode-bin               # Arch Linux (Latest from AUR)
-mise use -g opencode               # Tüm işletim sistemleri
-nix run nixpkgs#opencode           # veya en güncel geliştirme dalı için github:anomalyco/opencode
+# Paket y�neticileri
+npm i -g Codeymn-ai@latest        # veya bun/pnpm/yarn
+scoop install Codeymn             # Windows
+choco install Codeymn             # Windows
+brew install anomalyco/tap/Codeymn # macOS ve Linux (�nerilir, her zaman g�ncel)
+brew install Codeymn              # macOS ve Linux (resmi brew form�l�, daha az g�ncellenir)
+sudo pacman -S Codeymn            # Arch Linux (Stable)
+paru -S Codeymn-bin               # Arch Linux (Latest from AUR)
+mise use -g Codeymn               # T�m isletim sistemleri
+nix run nixpkgs#Codeymn           # veya en g�ncel gelistirme dali i�in github:anomalyco/Codeymn
 ```
 
 > [!TIP]
-> Kurulumdan önce 0.1.x'ten eski sürümleri kaldırın.
+> Kurulumdan �nce 0.1.x'ten eski s�r�mleri kaldirin.
 
-### Masaüstü Uygulaması (BETA)
+### Masa�st� Uygulamasi (BETA)
 
-OpenCode ayrıca masaüstü uygulaması olarak da mevcuttur. Doğrudan [sürüm sayfasından](https://github.com/anomalyco/opencode/releases) veya [opencode.ai/download](https://opencode.ai/download) adresinden indirebilirsiniz.
+Codeymn ayrica masa�st� uygulamasi olarak da mevcuttur. Dogrudan [s�r�m sayfasindan](https://github.com/anomalyco/Codeymn/releases) veya [Codeymn.ai/download](https://Codeymn.ai/download) adresinden indirebilirsiniz.
 
-| Platform              | İndirme                            |
+| Platform              | Indirme                            |
 | --------------------- | ---------------------------------- |
-| macOS (Apple Silicon) | `opencode-desktop-mac-arm64.dmg`   |
-| macOS (Intel)         | `opencode-desktop-mac-x64.dmg`     |
-| Windows               | `opencode-desktop-windows-x64.exe` |
+| macOS (Apple Silicon) | `Codeymn-desktop-mac-arm64.dmg`   |
+| macOS (Intel)         | `Codeymn-desktop-mac-x64.dmg`     |
+| Windows               | `Codeymn-desktop-windows-x64.exe` |
 | Linux                 | `.deb`, `.rpm` veya AppImage       |
 
 ```bash
 # macOS (Homebrew)
-brew install --cask opencode-desktop
+brew install --cask Codeymn-desktop
 # Windows (Scoop)
-scoop bucket add extras; scoop install extras/opencode-desktop
+scoop bucket add extras; scoop install extras/Codeymn-desktop
 ```
 
 #### Kurulum Dizini (Installation Directory)
 
-Kurulum betiği (install script), kurulum yolu (installation path) için aşağıdaki öncelik sırasını takip eder:
+Kurulum betigi (install script), kurulum yolu (installation path) i�in asagidaki �ncelik sirasini takip eder:
 
-1. `$OPENCODE_INSTALL_DIR` - Özel kurulum dizini
+1. `$CODEYMN_INSTALL_DIR` - �zel kurulum dizini
 2. `$XDG_BIN_DIR` - XDG Base Directory Specification uyumlu yol
-3. `$HOME/bin` - Standart kullanıcı binary dizini (varsa veya oluşturulabiliyorsa)
-4. `$HOME/.opencode/bin` - Varsayılan yedek konum
+3. `$HOME/bin` - Standart kullanici binary dizini (varsa veya olusturulabiliyorsa)
+4. `$HOME/.Codeymn/bin` - Varsayilan yedek konum
 
 ```bash
-# Örnekler
-OPENCODE_INSTALL_DIR=/usr/local/bin curl -fsSL https://opencode.ai/install | bash
-XDG_BIN_DIR=$HOME/.local/bin curl -fsSL https://opencode.ai/install | bash
+# �rnekler
+CODEYMN_INSTALL_DIR=/usr/local/bin curl -fsSL https://Codeymn.ai/install | bash
+XDG_BIN_DIR=$HOME/.local/bin curl -fsSL https://Codeymn.ai/install | bash
 ```
 
 ### Ajanlar
 
-OpenCode, `Tab` tuşuyla aralarında geçiş yapabileceğiniz iki yerleşik (built-in) ajan içerir.
+Codeymn, `Tab` tusuyla aralarinda ge�is yapabileceginiz iki yerlesik (built-in) ajan i�erir.
 
-- **build** - Varsayılan, geliştirme çalışmaları için tam erişimli ajan
-- **plan** - Analiz ve kod keşfi için salt okunur ajan
-  - Varsayılan olarak dosya düzenlemelerini reddeder
-  - Bash komutlarını çalıştırmadan önce izin ister
-  - Tanımadığınız kod tabanlarını keşfetmek veya değişiklikleri planlamak için ideal
+- **build** - Varsayilan, gelistirme �alismalari i�in tam erisimli ajan
+- **plan** - Analiz ve kod kesfi i�in salt okunur ajan
+  - Varsayilan olarak dosya d�zenlemelerini reddeder
+  - Bash komutlarini �alistirmadan �nce izin ister
+  - Tanimadiginiz kod tabanlarini kesfetmek veya degisiklikleri planlamak i�in ideal
 
-Ayrıca, karmaşık aramalar ve çok adımlı görevler için bir **genel** alt ajan bulunmaktadır.
-Bu dahili olarak kullanılır ve mesajlarda `@general` ile çağrılabilir.
+Ayrica, karmasik aramalar ve �ok adimli g�revler i�in bir **genel** alt ajan bulunmaktadir.
+Bu dahili olarak kullanilir ve mesajlarda `@general` ile �agrilabilir.
 
-[Ajanlar](https://opencode.ai/docs/agents) hakkında daha fazla bilgi edinin.
+[Ajanlar](https://Codeymn.ai/docs/agents) hakkinda daha fazla bilgi edinin.
 
-### Dokümantasyon
+### Dok�mantasyon
 
-OpenCode'u nasıl yapılandıracağınız hakkında daha fazla bilgi için [**dokümantasyonumuza göz atın**](https://opencode.ai/docs).
+Codeymn'u nasil yapilandiracaginiz hakkinda daha fazla bilgi i�in [**dok�mantasyonumuza g�z atin**](https://Codeymn.ai/docs).
 
-### Katkıda Bulunma
+### Katkida Bulunma
 
-OpenCode'a katkıda bulunmak istiyorsanız, lütfen bir pull request göndermeden önce [katkıda bulunma dokümanlarımızı](./CONTRIBUTING.md) okuyun.
+Codeymn'a katkida bulunmak istiyorsaniz, l�tfen bir pull request g�ndermeden �nce [katkida bulunma dok�manlarimizi](./CONTRIBUTING.md) okuyun.
 
-### OpenCode Üzerine Geliştirme
+### Codeymn �zerine Gelistirme
 
-OpenCode ile ilgili bir proje üzerinde çalışıyorsanız ve projenizin adının bir parçası olarak "opencode" kullanıyorsanız (örneğin, "opencode-dashboard" veya "opencode-mobile"), lütfen README dosyanıza projenin OpenCode ekibi tarafından geliştirilmediğini ve bizimle hiçbir şekilde bağlantılı olmadığını belirten bir not ekleyin.
+Codeymn ile ilgili bir proje �zerinde �alisiyorsaniz ve projenizin adinin bir par�asi olarak "Codeymn" kullaniyorsaniz (�rnegin, "Codeymn-dashboard" veya "Codeymn-mobile"), l�tfen README dosyaniza projenin Codeymn ekibi tarafindan gelistirilmedigini ve bizimle hi�bir sekilde baglantili olmadigini belirten bir not ekleyin.
 
 ---
 
-**Topluluğumuza katılın** [Discord](https://discord.gg/opencode) | [X.com](https://x.com/opencode)
+**Toplulugumuza katilin** [Discord](https://discord.gg/Codeymn) | [X.com](https://x.com/Codeymn)

@@ -1,4 +1,4 @@
-# Session API
+﻿# Session API
 
 ## Current V2 Core Slice
 
@@ -96,7 +96,7 @@ Session                            Epoch
    ├─ clear after Location move ─────▶
 ```
 
-Ambient project discovery canonicalizes and contains traversal within the project root and honors `OPENCODE_DISABLE_PROJECT_CONFIG`. An unavailable observation preserves the previously admitted value. A confirmed partial instruction removal emits the complete remaining aggregate with explicit supersession text; removing the final instruction emits a revocation message.
+Ambient project discovery canonicalizes and contains traversal within the project root and honors `CODEYMN_DISABLE_PROJECT_CONFIG`. An unavailable observation preserves the previously admitted value. A confirmed partial instruction removal emits the complete remaining aggregate with explicit supersession text; removing the final instruction emits a revocation message.
 
 Current Context Epoch follow-ups:
 

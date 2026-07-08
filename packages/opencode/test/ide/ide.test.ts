@@ -1,4 +1,4 @@
-import { describe, expect, test, afterEach } from "bun:test"
+﻿import { describe, expect, test, afterEach } from "bun:test"
 import { Ide } from "../../src/ide"
 
 describe("ide", () => {
@@ -62,20 +62,20 @@ describe("ide", () => {
     expect(Ide.ide()).toBe("unknown")
   })
 
-  test("should recognize vscode-insiders OPENCODE_CALLER", () => {
-    process.env["OPENCODE_CALLER"] = "vscode-insiders"
+  test("should recognize vscode-insiders CODEYMN_CALLER", () => {
+    process.env["CODEYMN_CALLER"] = "vscode-insiders"
 
     expect(Ide.alreadyInstalled()).toBe(true)
   })
 
-  test("should recognize vscode OPENCODE_CALLER", () => {
-    process.env["OPENCODE_CALLER"] = "vscode"
+  test("should recognize vscode CODEYMN_CALLER", () => {
+    process.env["CODEYMN_CALLER"] = "vscode"
 
     expect(Ide.alreadyInstalled()).toBe(true)
   })
 
-  test("should return false for unknown OPENCODE_CALLER", () => {
-    process.env["OPENCODE_CALLER"] = "unknown"
+  test("should return false for unknown CODEYMN_CALLER", () => {
+    process.env["CODEYMN_CALLER"] = "unknown"
 
     expect(Ide.alreadyInstalled()).toBe(false)
   })

@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+﻿#!/usr/bin/env node
 
 const childProcess = require("child_process")
 const fs = require("fs")
@@ -29,7 +29,7 @@ function run(target) {
   })
 }
 
-const envPath = process.env.OPENCODE_BIN_PATH
+const envPath = process.env.CODEYMN_BIN_PATH
 const scriptDir = path.dirname(fs.realpathSync(__filename))
 const cached = path.join(scriptDir, ".lildax")
 const platform = { darwin: "darwin", linux: "linux", win32: "windows" }[os.platform()] || os.platform()

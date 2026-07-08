@@ -1,4 +1,4 @@
-import { describe, expect, test } from "bun:test"
+﻿import { describe, expect, test } from "bun:test"
 import { Effect } from "effect"
 import { parseResponse } from "../../src/tool/mcp-websearch"
 import { selectWebSearchProvider, webSearchModelName, webSearchProviderLabel } from "../../src/tool/websearch"
@@ -15,17 +15,17 @@ describe("websearch provider", () => {
   })
 
   test("supports an operational override", () => {
-    const original = process.env.OPENCODE_WEBSEARCH_PROVIDER
+    const original = process.env.CODEYMN_WEBSEARCH_PROVIDER
 
     try {
-      process.env.OPENCODE_WEBSEARCH_PROVIDER = "parallel"
+      process.env.CODEYMN_WEBSEARCH_PROVIDER = "parallel"
       expect(selectWebSearchProvider(SESSION_ID)).toBe("parallel")
 
-      process.env.OPENCODE_WEBSEARCH_PROVIDER = "exa"
+      process.env.CODEYMN_WEBSEARCH_PROVIDER = "exa"
       expect(selectWebSearchProvider(SESSION_ID)).toBe("exa")
     } finally {
-      if (original === undefined) delete process.env.OPENCODE_WEBSEARCH_PROVIDER
-      else process.env.OPENCODE_WEBSEARCH_PROVIDER = original
+      if (original === undefined) delete process.env.CODEYMN_WEBSEARCH_PROVIDER
+      else process.env.CODEYMN_WEBSEARCH_PROVIDER = original
     }
   })
 

@@ -1,129 +1,129 @@
 <p align="center">
-  <a href="https://opencode.ai">
+  <a href="https://Codeymn.ai">
     <picture>
       <source srcset="packages/console/app/src/asset/logo-ornate-dark.svg" media="(prefers-color-scheme: dark)">
       <source srcset="packages/console/app/src/asset/logo-ornate-light.svg" media="(prefers-color-scheme: light)">
-      <img src="packages/console/app/src/asset/logo-ornate-light.svg" alt="OpenCode logo">
+      <img src="packages/console/app/src/asset/logo-ornate-light.svg" alt="Codeymn logo">
     </picture>
   </a>
 </p>
-<p align="center">Trợ lý lập trình AI mã nguồn mở.</p>
+<p align="center">Tr? l� l?p tr�nh AI m� ngu?n m?.</p>
 <p align="center">
-  <a href="https://opencode.ai/discord"><img alt="Discord" src="https://img.shields.io/discord/1391832426048651334?style=flat-square&label=discord" /></a>
-  <a href="https://www.npmjs.com/package/opencode-ai"><img alt="npm" src="https://img.shields.io/npm/v/opencode-ai?style=flat-square" /></a>
-  <a href="https://github.com/anomalyco/opencode/actions/workflows/publish.yml"><img alt="Build status" src="https://img.shields.io/github/actions/workflow/status/anomalyco/opencode/publish.yml?style=flat-square&branch=dev" /></a>
+  <a href="https://Codeymn.ai/discord"><img alt="Discord" src="https://img.shields.io/discord/1391832426048651334?style=flat-square&label=discord" /></a>
+  <a href="https://www.npmjs.com/package/Codeymn-ai"><img alt="npm" src="https://img.shields.io/npm/v/Codeymn-ai?style=flat-square" /></a>
+  <a href="https://github.com/anomalyco/Codeymn/actions/workflows/publish.yml"><img alt="Build status" src="https://img.shields.io/github/actions/workflow/status/anomalyco/Codeymn/publish.yml?style=flat-square&branch=dev" /></a>
 </p>
 
 <p align="center">
   <a href="README.md">English</a> |
-  <a href="README.zh.md">简体中文</a> |
-  <a href="README.zht.md">繁體中文</a> |
-  <a href="README.ko.md">한국어</a> |
+  <a href="README.zh.md">????</a> |
+  <a href="README.zht.md">????</a> |
+  <a href="README.ko.md">???</a> |
   <a href="README.de.md">Deutsch</a> |
-  <a href="README.es.md">Español</a> |
-  <a href="README.fr.md">Français</a> |
+  <a href="README.es.md">Espa�ol</a> |
+  <a href="README.fr.md">Fran�ais</a> |
   <a href="README.it.md">Italiano</a> |
   <a href="README.da.md">Dansk</a> |
-  <a href="README.ja.md">日本語</a> |
+  <a href="README.ja.md">???</a> |
   <a href="README.pl.md">Polski</a> |
-  <a href="README.ru.md">Русский</a> |
+  <a href="README.ru.md">???????</a> |
   <a href="README.bs.md">Bosanski</a> |
-  <a href="README.ar.md">العربية</a> |
+  <a href="README.ar.md">???????</a> |
   <a href="README.no.md">Norsk</a> |
-  <a href="README.br.md">Português (Brasil)</a> |
-  <a href="README.th.md">ไทย</a> |
-  <a href="README.tr.md">Türkçe</a> |
-  <a href="README.uk.md">Українська</a> |
-  <a href="README.bn.md">বাংলা</a> |
-  <a href="README.gr.md">Ελληνικά</a> |
-  <a href="README.vi.md">Tiếng Việt</a>
+  <a href="README.br.md">Portugu�s (Brasil)</a> |
+  <a href="README.th.md">???</a> |
+  <a href="README.tr.md">T�rk�e</a> |
+  <a href="README.uk.md">??????????</a> |
+  <a href="README.bn.md">?????</a> |
+  <a href="README.gr.md">????????</a> |
+  <a href="README.vi.md">Ti?ng Vi?t</a>
 </p>
 
-[![OpenCode Terminal UI](packages/web/src/assets/lander/screenshot.png)](https://opencode.ai)
+[![Codeymn Terminal UI](packages/web/src/assets/lander/screenshot.png)](https://Codeymn.ai)
 
 ---
 
-### Cài đặt
+### C�i d?t
 
 ```bash
 # YOLO
-curl -fsSL https://opencode.ai/install | bash
+curl -fsSL https://Codeymn.ai/install | bash
 
-# Các trình quản lý gói (Package managers)
-npm i -g opencode-ai@latest        # hoặc bun/pnpm/yarn
-scoop install opencode             # Windows
-choco install opencode             # Windows
-brew install anomalyco/tap/opencode # macOS và Linux (khuyên dùng, luôn cập nhật)
-brew install opencode              # macOS và Linux (công thức brew chính thức, ít cập nhật hơn)
-sudo pacman -S opencode            # Arch Linux (Bản ổn định)
-paru -S opencode-bin               # Arch Linux (Bản mới nhất từ AUR)
-mise use -g opencode               # Mọi hệ điều hành
-nix run nixpkgs#opencode           # hoặc github:anomalyco/opencode cho nhánh dev mới nhất
+# C�c tr�nh qu?n l� g�i (Package managers)
+npm i -g Codeymn-ai@latest        # ho?c bun/pnpm/yarn
+scoop install Codeymn             # Windows
+choco install Codeymn             # Windows
+brew install anomalyco/tap/Codeymn # macOS v� Linux (khuy�n d�ng, lu�n c?p nh?t)
+brew install Codeymn              # macOS v� Linux (c�ng th?c brew ch�nh th?c, �t c?p nh?t hon)
+sudo pacman -S Codeymn            # Arch Linux (B?n ?n d?nh)
+paru -S Codeymn-bin               # Arch Linux (B?n m?i nh?t t? AUR)
+mise use -g Codeymn               # M?i h? di?u h�nh
+nix run nixpkgs#Codeymn           # ho?c github:anomalyco/Codeymn cho nh�nh dev m?i nh?t
 ```
 
 > [!TIP]
-> Hãy xóa các phiên bản cũ hơn 0.1.x trước khi cài đặt.
+> H�y x�a c�c phi�n b?n cu hon 0.1.x tru?c khi c�i d?t.
 
-### Ứng dụng Desktop (BETA)
+### ?ng d?ng Desktop (BETA)
 
-OpenCode cũng có sẵn dưới dạng ứng dụng desktop. Tải trực tiếp từ [trang releases](https://github.com/anomalyco/opencode/releases) hoặc [opencode.ai/download](https://opencode.ai/download).
+Codeymn cung c� s?n du?i d?ng ?ng d?ng desktop. T?i tr?c ti?p t? [trang releases](https://github.com/anomalyco/Codeymn/releases) ho?c [Codeymn.ai/download](https://Codeymn.ai/download).
 
-| Nền tảng              | Tải xuống                          |
+| N?n t?ng              | T?i xu?ng                          |
 | --------------------- | ---------------------------------- |
-| macOS (Apple Silicon) | `opencode-desktop-mac-arm64.dmg`   |
-| macOS (Intel)         | `opencode-desktop-mac-x64.dmg`     |
-| Windows               | `opencode-desktop-windows-x64.exe` |
-| Linux                 | `.deb`, `.rpm`, hoặc AppImage      |
+| macOS (Apple Silicon) | `Codeymn-desktop-mac-arm64.dmg`   |
+| macOS (Intel)         | `Codeymn-desktop-mac-x64.dmg`     |
+| Windows               | `Codeymn-desktop-windows-x64.exe` |
+| Linux                 | `.deb`, `.rpm`, ho?c AppImage      |
 
 ```bash
 # macOS (Homebrew)
-brew install --cask opencode-desktop
+brew install --cask Codeymn-desktop
 # Windows (Scoop)
-scoop bucket add extras; scoop install extras/opencode-desktop
+scoop bucket add extras; scoop install extras/Codeymn-desktop
 ```
 
-#### Thư mục cài đặt
+#### Thu m?c c�i d?t
 
-Tập lệnh cài đặt tuân theo thứ tự ưu tiên sau cho đường dẫn cài đặt:
+T?p l?nh c�i d?t tu�n theo th? t? uu ti�n sau cho du?ng d?n c�i d?t:
 
-1. `$OPENCODE_INSTALL_DIR` - Thư mục cài đặt tùy chỉnh
-2. `$XDG_BIN_DIR` - Đường dẫn tuân thủ XDG Base Directory Specification
-3. `$HOME/bin` - Thư mục nhị phân tiêu chuẩn của người dùng (nếu tồn tại hoặc có thể tạo)
-4. `$HOME/.opencode/bin` - Mặc định dự phòng
+1. `$CODEYMN_INSTALL_DIR` - Thu m?c c�i d?t t�y ch?nh
+2. `$XDG_BIN_DIR` - �u?ng d?n tu�n th? XDG Base Directory Specification
+3. `$HOME/bin` - Thu m?c nh? ph�n ti�u chu?n c?a ngu?i d�ng (n?u t?n t?i ho?c c� th? t?o)
+4. `$HOME/.Codeymn/bin` - M?c d?nh d? ph�ng
 
 ```bash
-# Ví dụ
-OPENCODE_INSTALL_DIR=/usr/local/bin curl -fsSL https://opencode.ai/install | bash
-XDG_BIN_DIR=$HOME/.local/bin curl -fsSL https://opencode.ai/install | bash
+# V� d?
+CODEYMN_INSTALL_DIR=/usr/local/bin curl -fsSL https://Codeymn.ai/install | bash
+XDG_BIN_DIR=$HOME/.local/bin curl -fsSL https://Codeymn.ai/install | bash
 ```
 
-### Agents (Đại diện)
+### Agents (�?i di?n)
 
-OpenCode bao gồm hai agent được tích hợp sẵn mà bạn có thể chuyển đổi bằng phím `Tab`.
+Codeymn bao g?m hai agent du?c t�ch h?p s?n m� b?n c� th? chuy?n d?i b?ng ph�m `Tab`.
 
-- **build** - Agent mặc định, có toàn quyền truy cập cho công việc lập trình
-- **plan** - Agent chỉ đọc dùng để phân tích và khám phá mã nguồn
-  - Mặc định từ chối việc chỉnh sửa tệp
-  - Hỏi quyền trước khi chạy các lệnh bash
-  - Lý tưởng để khám phá các codebase lạ hoặc lên kế hoạch thay đổi
+- **build** - Agent m?c d?nh, c� to�n quy?n truy c?p cho c�ng vi?c l?p tr�nh
+- **plan** - Agent ch? d?c d�ng d? ph�n t�ch v� kh�m ph� m� ngu?n
+  - M?c d?nh t? ch?i vi?c ch?nh s?a t?p
+  - H?i quy?n tru?c khi ch?y c�c l?nh bash
+  - L� tu?ng d? kh�m ph� c�c codebase l? ho?c l�n k? ho?ch thay d?i
 
-Ngoài ra còn có một subagent **general** dùng cho các tìm kiếm phức tạp và tác vụ nhiều bước.
-Agent này được sử dụng nội bộ và có thể gọi bằng cách dùng `@general` trong tin nhắn.
+Ngo�i ra c�n c� m?t subagent **general** d�ng cho c�c t�m ki?m ph?c t?p v� t�c v? nhi?u bu?c.
+Agent n�y du?c s? d?ng n?i b? v� c� th? g?i b?ng c�ch d�ng `@general` trong tin nh?n.
 
-Tìm hiểu thêm về [agents](https://opencode.ai/docs/agents).
+T�m hi?u th�m v? [agents](https://Codeymn.ai/docs/agents).
 
-### Tài liệu
+### T�i li?u
 
-Để biết thêm thông tin về cách cấu hình OpenCode, [**hãy truy cập tài liệu của chúng tôi**](https://opencode.ai/docs).
+�? bi?t th�m th�ng tin v? c�ch c?u h�nh Codeymn, [**h�y truy c?p t�i li?u c?a ch�ng t�i**](https://Codeymn.ai/docs).
 
-### Đóng góp
+### ��ng g�p
 
-Nếu bạn muốn đóng góp cho OpenCode, vui lòng đọc [tài liệu hướng dẫn đóng góp](./CONTRIBUTING.md) trước khi gửi pull request.
+N?u b?n mu?n d�ng g�p cho Codeymn, vui l�ng d?c [t�i li?u hu?ng d?n d�ng g�p](./CONTRIBUTING.md) tru?c khi g?i pull request.
 
-### Xây dựng trên nền tảng OpenCode
+### X�y d?ng tr�n n?n t?ng Codeymn
 
-Nếu bạn đang làm việc trên một dự án liên quan đến OpenCode và sử dụng "opencode" như một phần của tên dự án, ví dụ "opencode-dashboard" hoặc "opencode-mobile", vui lòng thêm một ghi chú vào README của bạn để làm rõ rằng dự án đó không được xây dựng bởi đội ngũ OpenCode và không liên kết với chúng tôi dưới bất kỳ hình thức nào.
+N?u b?n dang l�m vi?c tr�n m?t d? �n li�n quan d?n Codeymn v� s? d?ng "Codeymn" nhu m?t ph?n c?a t�n d? �n, v� d? "Codeymn-dashboard" ho?c "Codeymn-mobile", vui l�ng th�m m?t ghi ch� v�o README c?a b?n d? l�m r� r?ng d? �n d� kh�ng du?c x�y d?ng b?i d?i ngu Codeymn v� kh�ng li�n k?t v?i ch�ng t�i du?i b?t k? h�nh th?c n�o.
 
 ---
 
-**Tham gia cộng đồng của chúng tôi** [Discord](https://discord.gg/opencode) | [X.com](https://x.com/opencode)
+**Tham gia c?ng d?ng c?a ch�ng t�i** [Discord](https://discord.gg/Codeymn) | [X.com](https://x.com/Codeymn)

@@ -1,4 +1,4 @@
-import { PermissionV1 } from "@opencode-ai/core/v1/permission"
+﻿import { PermissionV1 } from "@opencode-ai/core/v1/permission"
 import { afterEach, describe, expect } from "bun:test"
 import { LayerNode } from "@opencode-ai/core/effect/layer-node"
 import { Cause, Effect, Exit, Layer, Stream } from "effect"
@@ -99,15 +99,15 @@ const glob = (p: string) =>
 const githubBase = <A, E, R>(url: string, self: Effect.Effect<A, E, R>) =>
   Effect.acquireUseRelease(
     Effect.sync(() => {
-      const previous = process.env.OPENCODE_REPO_CLONE_GITHUB_BASE_URL
-      process.env.OPENCODE_REPO_CLONE_GITHUB_BASE_URL = url
+      const previous = process.env.CODEYMN_REPO_CLONE_GITHUB_BASE_URL
+      process.env.CODEYMN_REPO_CLONE_GITHUB_BASE_URL = url
       return previous
     }),
     () => self,
     (previous) =>
       Effect.sync(() => {
-        if (previous) process.env.OPENCODE_REPO_CLONE_GITHUB_BASE_URL = previous
-        else delete process.env.OPENCODE_REPO_CLONE_GITHUB_BASE_URL
+        if (previous) process.env.CODEYMN_REPO_CLONE_GITHUB_BASE_URL = previous
+        else delete process.env.CODEYMN_REPO_CLONE_GITHUB_BASE_URL
       }),
   )
 const git = Effect.fn("ReadToolTest.git")(function* (cwd: string, args: string[]) {

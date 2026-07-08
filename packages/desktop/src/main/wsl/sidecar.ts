@@ -1,4 +1,4 @@
-import { spawn } from "node:child_process"
+﻿import { spawn } from "node:child_process"
 import { randomUUID } from "node:crypto"
 import { createServer } from "node:net"
 import { app } from "electron"
@@ -18,21 +18,21 @@ export async function spawnWslSidecar(
   opts: { onLine?: (line: WslCommandLine) => void; healthTimeoutMs?: number } = {},
 ): Promise<WslSidecar> {
   const opencode = await resolveWslOpencode(distro)
-  if (!opencode) throw new Error(`OpenCode is not installed in ${distro}`)
+  if (!opencode) throw new Error(`Codeymn is not installed in ${distro}`)
 
   const port = await allocatePort()
   const password = randomUUID()
-  const username = "opencode"
+  const username = "codeymn"
   const script = [
     "set -euo pipefail",
     'cd "$HOME" || cd /',
     'PATH=$(awk -v RS=: -v ORS=: \'$0 !~ /^\\/mnt\\//\' <<<"$PATH" | sed "s/:$//")',
     "export PATH",
     "export WSLENV=",
-    "export OPENCODE_EXPERIMENTAL_DISABLE_FILEWATCHER=true",
-    "export OPENCODE_CLIENT=desktop",
-    `export OPENCODE_SERVER_USERNAME=${shellEscape(username)}`,
-    `export OPENCODE_SERVER_PASSWORD=${shellEscape(password)}`,
+    "export CODEYMN_EXPERIMENTAL_DISABLE_FILEWATCHER=true",
+    "export CODEYMN_CLIENT=desktop",
+    `export CODEYMN_SERVER_USERNAME=${shellEscape(username)}`,
+    `export CODEYMN_SERVER_PASSWORD=${shellEscape(password)}`,
     'export XDG_STATE_HOME="$HOME/.local/state"',
     `exec ${shellEscape(opencode)} --print-logs --log-level ${app.isPackaged ? "WARN" : "INFO"} serve --hostname 0.0.0.0 --port ${port}`,
   ].join("\n")

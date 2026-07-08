@@ -1,4 +1,4 @@
-import { PermissionV1 } from "@opencode-ai/core/v1/permission"
+﻿import { PermissionV1 } from "@opencode-ai/core/v1/permission"
 import { CrossSpawnSpawner } from "@opencode-ai/core/cross-spawn-spawner"
 import { LayerNode } from "@opencode-ai/core/effect/layer-node"
 import { Ripgrep } from "@opencode-ai/core/ripgrep"
@@ -50,11 +50,11 @@ Use this skill.
       )
       yield* Effect.promise(() => Bun.write(path.join(skill, "scripts", "demo.txt"), "demo"))
 
-      const home = process.env.OPENCODE_TEST_HOME
-      process.env.OPENCODE_TEST_HOME = dir
+      const home = process.env.CODEYMN_TEST_HOME
+      process.env.CODEYMN_TEST_HOME = dir
       yield* Effect.addFinalizer(() =>
         Effect.sync(() => {
-          process.env.OPENCODE_TEST_HOME = home
+          process.env.CODEYMN_TEST_HOME = home
         }),
       )
 
@@ -96,11 +96,11 @@ Use this skill.
   it.instance("execute preserves not found message", () =>
     Effect.gen(function* () {
       const dir = (yield* TestInstance).directory
-      const home = process.env.OPENCODE_TEST_HOME
-      process.env.OPENCODE_TEST_HOME = dir
+      const home = process.env.CODEYMN_TEST_HOME
+      process.env.CODEYMN_TEST_HOME = dir
       yield* Effect.addFinalizer(() =>
         Effect.sync(() => {
-          process.env.OPENCODE_TEST_HOME = home
+          process.env.CODEYMN_TEST_HOME = home
         }),
       )
 

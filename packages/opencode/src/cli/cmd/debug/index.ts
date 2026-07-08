@@ -1,4 +1,4 @@
-import { Global } from "@opencode-ai/core/global"
+﻿import { Global } from "@opencode-ai/core/global"
 import { InstallationVersion } from "@opencode-ai/core/installation/version"
 import { Flag } from "@opencode-ai/core/flag/flag"
 import os from "os"
@@ -62,7 +62,7 @@ const InfoCommand = effectCmd({
     console.log(`os: ${os.type()} ${os.release()} ${os.arch()}`)
     console.log(`terminal: ${terminal || "unknown"}`)
     console.log("plugins:")
-    if (Flag.OPENCODE_PURE) {
+    if (Flag.CODEYMN_PURE) {
       console.log("external plugins disabled (--pure)")
       return
     }

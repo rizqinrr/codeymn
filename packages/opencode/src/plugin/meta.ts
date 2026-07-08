@@ -1,4 +1,4 @@
-import path from "path"
+﻿import path from "path"
 import { fileURLToPath } from "url"
 
 import { Flag } from "@opencode-ai/core/flag/flag"
@@ -46,7 +46,7 @@ type Core = Omit<Entry, "first_time" | "last_time" | "time_changed" | "load_coun
 type Row = Touch & { core: Core }
 
 function storePath() {
-  return Flag.OPENCODE_PLUGIN_META_FILE ?? path.join(Global.Path.state, "plugin-meta.json")
+  return Flag.CODEYMN_PLUGIN_META_FILE ?? path.join(Global.Path.state, "plugin-meta.json")
 }
 
 function lock(file: string) {

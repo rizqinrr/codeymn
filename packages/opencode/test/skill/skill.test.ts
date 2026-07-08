@@ -1,4 +1,4 @@
-import { describe, expect } from "bun:test"
+﻿import { describe, expect } from "bun:test"
 import { LayerNode } from "@opencode-ai/core/effect/layer-node"
 import { Effect, Layer } from "effect"
 import { Skill } from "../../src/skill"
@@ -52,14 +52,14 @@ This skill is loaded from the global home directory.
 const withHome = <A, E, R>(home: string, self: Effect.Effect<A, E, R>) =>
   Effect.acquireUseRelease(
     Effect.sync(() => {
-      const prev = process.env.OPENCODE_TEST_HOME
-      process.env.OPENCODE_TEST_HOME = home
+      const prev = process.env.CODEYMN_TEST_HOME
+      process.env.CODEYMN_TEST_HOME = home
       return prev
     }),
     () => self,
     (prev) =>
       Effect.sync(() => {
-        process.env.OPENCODE_TEST_HOME = prev
+        process.env.CODEYMN_TEST_HOME = prev
       }),
   )
 

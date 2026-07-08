@@ -1,4 +1,4 @@
-import { describe, expect } from "bun:test"
+﻿import { describe, expect } from "bun:test"
 import type { SetSessionConfigOptionResponse } from "@agentclientprotocol/sdk"
 import { Effect } from "effect"
 import { cliIt } from "../../lib/cli-process"
@@ -19,7 +19,7 @@ describe("opencode acp config option subprocess", () => {
       Effect.gen(function* () {
         const acp = yield* createAcpClient(
           { opencode },
-          { OPENCODE_CONFIG_CONTENT: JSON.stringify(verifierConfig(llm.url)) },
+          { CODEYMN_CONFIG_CONTENT: JSON.stringify(verifierConfig(llm.url)) },
         )
         yield* initialize(acp)
         const model = expectSelectOption((yield* newSession(acp, home)).configOptions, "model")
@@ -37,7 +37,7 @@ describe("opencode acp config option subprocess", () => {
       Effect.gen(function* () {
         const acp = yield* createAcpClient(
           { opencode },
-          { OPENCODE_CONFIG_CONTENT: JSON.stringify(verifierConfig(llm.url)) },
+          { CODEYMN_CONFIG_CONTENT: JSON.stringify(verifierConfig(llm.url)) },
         )
         yield* initialize(acp)
         const session = yield* newSession(acp, home)
@@ -64,7 +64,7 @@ describe("opencode acp config option subprocess", () => {
       Effect.gen(function* () {
         const acp = yield* createAcpClient(
           { opencode },
-          { OPENCODE_CONFIG_CONTENT: JSON.stringify(verifierConfig(llm.url)) },
+          { CODEYMN_CONFIG_CONTENT: JSON.stringify(verifierConfig(llm.url)) },
         )
         yield* initialize(acp)
         const effort = expectSelectOption((yield* newSession(acp, home)).configOptions, "effort")
@@ -82,7 +82,7 @@ describe("opencode acp config option subprocess", () => {
       Effect.gen(function* () {
         const acp = yield* createAcpClient(
           { opencode },
-          { OPENCODE_CONFIG_CONTENT: JSON.stringify(verifierConfig(llm.url)) },
+          { CODEYMN_CONFIG_CONTENT: JSON.stringify(verifierConfig(llm.url)) },
         )
         yield* initialize(acp)
         const session = yield* newSession(acp, home)

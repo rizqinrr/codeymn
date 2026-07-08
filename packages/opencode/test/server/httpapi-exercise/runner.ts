@@ -1,4 +1,4 @@
-import { Flag } from "@opencode-ai/core/flag/flag"
+﻿import { Flag } from "@opencode-ai/core/flag/flag"
 import { ConfigV1 } from "@opencode-ai/core/v1/config/config"
 import { SessionV1 } from "@opencode-ai/core/v1/session"
 import { Cause, Duration, Effect, Layer, Scope } from "effect"
@@ -258,8 +258,8 @@ function fakeLlmConfig(url: string): Partial<ConfigV1.Info> {
 
 const resetState = Effect.promise(async () => {
   const modules = await runtime()
-  Flag.OPENCODE_SERVER_PASSWORD = original.OPENCODE_SERVER_PASSWORD
-  Flag.OPENCODE_SERVER_USERNAME = original.OPENCODE_SERVER_USERNAME
+  Flag.CODEYMN_SERVER_PASSWORD = original.CODEYMN_SERVER_PASSWORD
+  Flag.CODEYMN_SERVER_USERNAME = original.CODEYMN_SERVER_USERNAME
   await disposeApps()
   await modules.disposeAllInstances()
   await modules.resetDatabase()

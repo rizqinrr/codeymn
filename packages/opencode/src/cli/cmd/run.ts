@@ -1,4 +1,4 @@
-import type { PermissionV1 } from "@opencode-ai/core/v1/permission"
+﻿import type { PermissionV1 } from "@opencode-ai/core/v1/permission"
 import { FSUtil } from "@opencode-ai/core/fs-util"
 // CLI entry point for `opencode run` and `opencode --mini`.
 //
@@ -194,12 +194,12 @@ export const RunCommand = effectCmd({
       .option("password", {
         alias: ["p"],
         type: "string",
-        describe: "basic auth password (defaults to OPENCODE_SERVER_PASSWORD)",
+        describe: "basic auth password (defaults to CODEYMN_SERVER_PASSWORD)",
       })
       .option("username", {
         alias: ["u"],
         type: "string",
-        describe: "basic auth username (defaults to OPENCODE_SERVER_USERNAME or 'opencode')",
+        describe: "basic auth username (defaults to CODEYMN_SERVER_USERNAME or 'opencode')",
       })
       .option("dir", {
         type: "string",
@@ -977,7 +977,7 @@ type MiniCommandInput = {
 export async function runMini(input: MiniCommandInput) {
   if (!RunCommand.handler) throw new Error("Mini command handler is unavailable")
   await RunCommand.handler({
-    $0: "opencode",
+    $0: "codeymn",
     _: ["mini"],
     message: input.prompt ? [input.prompt] : [],
     command: undefined,

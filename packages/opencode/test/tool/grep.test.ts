@@ -1,4 +1,4 @@
-import { PermissionV1 } from "@opencode-ai/core/v1/permission"
+﻿import { PermissionV1 } from "@opencode-ai/core/v1/permission"
 import { describe, expect } from "bun:test"
 import fs from "fs/promises"
 import os from "os"
@@ -47,15 +47,15 @@ const full = (p: string) => (process.platform === "win32" ? Filesystem.normalize
 const githubBase = <A, E, R>(url: string, self: Effect.Effect<A, E, R>) =>
   Effect.acquireUseRelease(
     Effect.sync(() => {
-      const previous = process.env.OPENCODE_REPO_CLONE_GITHUB_BASE_URL
-      process.env.OPENCODE_REPO_CLONE_GITHUB_BASE_URL = url
+      const previous = process.env.CODEYMN_REPO_CLONE_GITHUB_BASE_URL
+      process.env.CODEYMN_REPO_CLONE_GITHUB_BASE_URL = url
       return previous
     }),
     () => self,
     (previous) =>
       Effect.sync(() => {
-        if (previous) process.env.OPENCODE_REPO_CLONE_GITHUB_BASE_URL = previous
-        else delete process.env.OPENCODE_REPO_CLONE_GITHUB_BASE_URL
+        if (previous) process.env.CODEYMN_REPO_CLONE_GITHUB_BASE_URL = previous
+        else delete process.env.CODEYMN_REPO_CLONE_GITHUB_BASE_URL
       }),
   )
 

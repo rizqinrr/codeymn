@@ -1,4 +1,4 @@
-import { Layer } from "effect"
+﻿import { Layer } from "effect"
 import { OtlpLogger } from "effect/unstable/observability"
 import { Flag } from "../flag/flag"
 import { InstallationChannel, InstallationVersion } from "../installation/version"
@@ -40,7 +40,7 @@ export function resource(): { serviceName: string; serviceVersion: string; attri
     attributes: {
       ...resourceAttributes(),
       "deployment.environment.name": InstallationChannel,
-      "opencode.client": Flag.OPENCODE_CLIENT,
+      "opencode.client": Flag.CODEYMN_CLIENT,
       "opencode.run": runID,
       "service.instance.id": runID,
     },

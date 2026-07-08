@@ -1,45 +1,45 @@
 <p align="center">
-  <a href="https://opencode.ai">
+  <a href="https://Codeymn.ai">
     <picture>
       <source srcset="packages/console/app/src/asset/logo-ornate-dark.svg" media="(prefers-color-scheme: dark)">
       <source srcset="packages/console/app/src/asset/logo-ornate-light.svg" media="(prefers-color-scheme: light)">
-      <img src="packages/console/app/src/asset/logo-ornate-light.svg" alt="Logo OpenCode">
+      <img src="packages/console/app/src/asset/logo-ornate-light.svg" alt="Logo Codeymn">
     </picture>
   </a>
 </p>
 <p align="center">L'agent de codage IA open source.</p>
 <p align="center">
-  <a href="https://opencode.ai/discord"><img alt="Discord" src="https://img.shields.io/discord/1391832426048651334?style=flat-square&label=discord" /></a>
-  <a href="https://www.npmjs.com/package/opencode-ai"><img alt="npm" src="https://img.shields.io/npm/v/opencode-ai?style=flat-square" /></a>
-  <a href="https://github.com/anomalyco/opencode/actions/workflows/publish.yml"><img alt="Build status" src="https://img.shields.io/github/actions/workflow/status/anomalyco/opencode/publish.yml?style=flat-square&branch=dev" /></a>
+  <a href="https://Codeymn.ai/discord"><img alt="Discord" src="https://img.shields.io/discord/1391832426048651334?style=flat-square&label=discord" /></a>
+  <a href="https://www.npmjs.com/package/Codeymn-ai"><img alt="npm" src="https://img.shields.io/npm/v/Codeymn-ai?style=flat-square" /></a>
+  <a href="https://github.com/anomalyco/Codeymn/actions/workflows/publish.yml"><img alt="Build status" src="https://img.shields.io/github/actions/workflow/status/anomalyco/Codeymn/publish.yml?style=flat-square&branch=dev" /></a>
 </p>
 
 <p align="center">
   <a href="README.md">English</a> |
-  <a href="README.zh.md">简体中文</a> |
-  <a href="README.zht.md">繁體中文</a> |
-  <a href="README.ko.md">한국어</a> |
+  <a href="README.zh.md">????</a> |
+  <a href="README.zht.md">????</a> |
+  <a href="README.ko.md">???</a> |
   <a href="README.de.md">Deutsch</a> |
-  <a href="README.es.md">Español</a> |
-  <a href="README.fr.md">Français</a> |
+  <a href="README.es.md">Espa�ol</a> |
+  <a href="README.fr.md">Fran�ais</a> |
   <a href="README.it.md">Italiano</a> |
   <a href="README.da.md">Dansk</a> |
-  <a href="README.ja.md">日本語</a> |
+  <a href="README.ja.md">???</a> |
   <a href="README.pl.md">Polski</a> |
-  <a href="README.ru.md">Русский</a> |
+  <a href="README.ru.md">???????</a> |
   <a href="README.bs.md">Bosanski</a> |
-  <a href="README.ar.md">العربية</a> |
+  <a href="README.ar.md">???????</a> |
   <a href="README.no.md">Norsk</a> |
-  <a href="README.br.md">Português (Brasil)</a> |
-  <a href="README.th.md">ไทย</a> |
-  <a href="README.tr.md">Türkçe</a> |
-  <a href="README.uk.md">Українська</a> |
-  <a href="README.bn.md">বাংলা</a> |
-  <a href="README.gr.md">Ελληνικά</a> |
-  <a href="README.vi.md">Tiếng Việt</a>
+  <a href="README.br.md">Portugu�s (Brasil)</a> |
+  <a href="README.th.md">???</a> |
+  <a href="README.tr.md">T�rk�e</a> |
+  <a href="README.uk.md">??????????</a> |
+  <a href="README.bn.md">?????</a> |
+  <a href="README.gr.md">????????</a> |
+  <a href="README.vi.md">Ti?ng Vi?t</a>
 </p>
 
-[![OpenCode Terminal UI](packages/web/src/assets/lander/screenshot.png)](https://opencode.ai)
+[![Codeymn Terminal UI](packages/web/src/assets/lander/screenshot.png)](https://Codeymn.ai)
 
 ---
 
@@ -47,83 +47,83 @@
 
 ```bash
 # YOLO
-curl -fsSL https://opencode.ai/install | bash
+curl -fsSL https://Codeymn.ai/install | bash
 
 # Gestionnaires de paquets
-npm i -g opencode-ai@latest        # ou bun/pnpm/yarn
-scoop install opencode             # Windows
-choco install opencode             # Windows
-brew install anomalyco/tap/opencode # macOS et Linux (recommandé, toujours à jour)
-brew install opencode              # macOS et Linux (formule officielle brew, mise à jour moins fréquente)
-sudo pacman -S opencode            # Arch Linux (Stable)
-paru -S opencode-bin               # Arch Linux (Latest from AUR)
-mise use -g opencode               # n'importe quel OS
-nix run nixpkgs#opencode           # ou github:anomalyco/opencode pour la branche dev la plus récente
+npm i -g Codeymn-ai@latest        # ou bun/pnpm/yarn
+scoop install Codeymn             # Windows
+choco install Codeymn             # Windows
+brew install anomalyco/tap/Codeymn # macOS et Linux (recommand�, toujours � jour)
+brew install Codeymn              # macOS et Linux (formule officielle brew, mise � jour moins fr�quente)
+sudo pacman -S Codeymn            # Arch Linux (Stable)
+paru -S Codeymn-bin               # Arch Linux (Latest from AUR)
+mise use -g Codeymn               # n'importe quel OS
+nix run nixpkgs#Codeymn           # ou github:anomalyco/Codeymn pour la branche dev la plus r�cente
 ```
 
 > [!TIP]
-> Supprimez les versions antérieures à 0.1.x avant d'installer.
+> Supprimez les versions ant�rieures � 0.1.x avant d'installer.
 
 ### Application de bureau (BETA)
 
-OpenCode est aussi disponible en application de bureau. Téléchargez-la directement depuis la [page des releases](https://github.com/anomalyco/opencode/releases) ou [opencode.ai/download](https://opencode.ai/download).
+Codeymn est aussi disponible en application de bureau. T�l�chargez-la directement depuis la [page des releases](https://github.com/anomalyco/Codeymn/releases) ou [Codeymn.ai/download](https://Codeymn.ai/download).
 
-| Plateforme            | Téléchargement                     |
+| Plateforme            | T�l�chargement                     |
 | --------------------- | ---------------------------------- |
-| macOS (Apple Silicon) | `opencode-desktop-mac-arm64.dmg`   |
-| macOS (Intel)         | `opencode-desktop-mac-x64.dmg`     |
-| Windows               | `opencode-desktop-windows-x64.exe` |
+| macOS (Apple Silicon) | `Codeymn-desktop-mac-arm64.dmg`   |
+| macOS (Intel)         | `Codeymn-desktop-mac-x64.dmg`     |
+| Windows               | `Codeymn-desktop-windows-x64.exe` |
 | Linux                 | `.deb`, `.rpm`, ou AppImage        |
 
 ```bash
 # macOS (Homebrew)
-brew install --cask opencode-desktop
+brew install --cask Codeymn-desktop
 # Windows (Scoop)
-scoop bucket add extras; scoop install extras/opencode-desktop
+scoop bucket add extras; scoop install extras/Codeymn-desktop
 ```
 
-#### Répertoire d'installation
+#### R�pertoire d'installation
 
-Le script d'installation respecte l'ordre de priorité suivant pour le chemin d'installation :
+Le script d'installation respecte l'ordre de priorit� suivant pour le chemin d'installation :
 
-1. `$OPENCODE_INSTALL_DIR` - Répertoire d'installation personnalisé
-2. `$XDG_BIN_DIR` - Chemin conforme à la spécification XDG Base Directory
-3. `$HOME/bin` - Répertoire binaire utilisateur standard (s'il existe ou peut être créé)
-4. `$HOME/.opencode/bin` - Repli par défaut
+1. `$CODEYMN_INSTALL_DIR` - R�pertoire d'installation personnalis�
+2. `$XDG_BIN_DIR` - Chemin conforme � la sp�cification XDG Base Directory
+3. `$HOME/bin` - R�pertoire binaire utilisateur standard (s'il existe ou peut �tre cr��)
+4. `$HOME/.Codeymn/bin` - Repli par d�faut
 
 ```bash
 # Exemples
-OPENCODE_INSTALL_DIR=/usr/local/bin curl -fsSL https://opencode.ai/install | bash
-XDG_BIN_DIR=$HOME/.local/bin curl -fsSL https://opencode.ai/install | bash
+CODEYMN_INSTALL_DIR=/usr/local/bin curl -fsSL https://Codeymn.ai/install | bash
+XDG_BIN_DIR=$HOME/.local/bin curl -fsSL https://Codeymn.ai/install | bash
 ```
 
 ### Agents
 
-OpenCode inclut deux agents intégrés que vous pouvez basculer avec la touche `Tab`.
+Codeymn inclut deux agents int�gr�s que vous pouvez basculer avec la touche `Tab`.
 
-- **build** - Par défaut, agent avec accès complet pour le travail de développement
+- **build** - Par d�faut, agent avec acc�s complet pour le travail de d�veloppement
 - **plan** - Agent en lecture seule pour l'analyse et l'exploration du code
-  - Refuse les modifications de fichiers par défaut
-  - Demande l'autorisation avant d'exécuter des commandes bash
-  - Idéal pour explorer une base de code inconnue ou planifier des changements
+  - Refuse les modifications de fichiers par d�faut
+  - Demande l'autorisation avant d'ex�cuter des commandes bash
+  - Id�al pour explorer une base de code inconnue ou planifier des changements
 
-Un sous-agent **general** est aussi inclus pour les recherches complexes et les tâches en plusieurs étapes.
-Il est utilisé en interne et peut être invoqué via `@general` dans les messages.
+Un sous-agent **general** est aussi inclus pour les recherches complexes et les t�ches en plusieurs �tapes.
+Il est utilis� en interne et peut �tre invoqu� via `@general` dans les messages.
 
-En savoir plus sur les [agents](https://opencode.ai/docs/agents).
+En savoir plus sur les [agents](https://Codeymn.ai/docs/agents).
 
 ### Documentation
 
-Pour plus d'informations sur la configuration d'OpenCode, [**consultez notre documentation**](https://opencode.ai/docs).
+Pour plus d'informations sur la configuration d'Codeymn, [**consultez notre documentation**](https://Codeymn.ai/docs).
 
 ### Contribuer
 
-Si vous souhaitez contribuer à OpenCode, lisez nos [docs de contribution](./CONTRIBUTING.md) avant de soumettre une pull request.
+Si vous souhaitez contribuer � Codeymn, lisez nos [docs de contribution](./CONTRIBUTING.md) avant de soumettre une pull request.
 
-### Construire avec OpenCode
+### Construire avec Codeymn
 
-Si vous travaillez sur un projet lié à OpenCode et que vous utilisez "opencode" dans le nom du projet (par exemple, "opencode-dashboard" ou "opencode-mobile"), ajoutez une note dans votre README pour préciser qu'il n'est pas construit par l'équipe OpenCode et qu'il n'est pas affilié à nous.
+Si vous travaillez sur un projet li� � Codeymn et que vous utilisez "Codeymn" dans le nom du projet (par exemple, "Codeymn-dashboard" ou "Codeymn-mobile"), ajoutez une note dans votre README pour pr�ciser qu'il n'est pas construit par l'�quipe Codeymn et qu'il n'est pas affili� � nous.
 
 ---
 
-**Rejoignez notre communauté** [Discord](https://discord.gg/opencode) | [X.com](https://x.com/opencode)
+**Rejoignez notre communaut�** [Discord](https://discord.gg/Codeymn) | [X.com](https://x.com/Codeymn)

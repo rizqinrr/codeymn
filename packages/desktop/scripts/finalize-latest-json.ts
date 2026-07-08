@@ -1,4 +1,4 @@
-#!/usr/bin/env bun
+﻿#!/usr/bin/env bun
 
 import { $ } from "bun"
 import path from "node:path"
@@ -16,11 +16,11 @@ const dryRun = values["dry-run"]
 const repo = process.env.GH_REPO
 if (!repo) throw new Error("GH_REPO is required")
 
-const releaseId = process.env.OPENCODE_RELEASE
-if (!releaseId) throw new Error("OPENCODE_RELEASE is required")
+const releaseId = process.env.CODEYMN_RELEASE
+if (!releaseId) throw new Error("CODEYMN_RELEASE is required")
 
-const version = process.env.OPENCODE_VERSION
-if (!version) throw new Error("OPENCODE_VERSION is required")
+const version = process.env.CODEYMN_VERSION
+if (!version) throw new Error("CODEYMN_VERSION is required")
 
 const dir = process.env.LATEST_YML_DIR
 if (!dir) throw new Error("LATEST_YML_DIR is required")

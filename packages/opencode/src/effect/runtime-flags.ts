@@ -1,4 +1,4 @@
-import { Config, ConfigProvider, Context, Effect, Layer, Option } from "effect"
+﻿import { Config, ConfigProvider, Context, Effect, Layer, Option } from "effect"
 import { ConfigService } from "@/effect/config-service"
 
 const bool = (name: string) => Config.boolean(name).pipe(Config.withDefault(false))
@@ -7,53 +7,53 @@ const positiveInteger = (name: string) =>
     Config.map((value) => (Number.isInteger(value) && value > 0 ? value : undefined)),
     Config.orElse(() => Config.succeed(undefined)),
   )
-const experimental = bool("OPENCODE_EXPERIMENTAL")
+const experimental = bool("CODEYMN_EXPERIMENTAL")
 const enabledByExperimental = (name: string) =>
   Config.all({ experimental, enabled: Config.boolean(name).pipe(Config.option) }).pipe(
     Config.map((flags) => Option.getOrElse(flags.enabled, () => flags.experimental)),
   )
 
 export class Service extends ConfigService.Service<Service>()("@opencode/RuntimeFlags", {
-  autoShare: bool("OPENCODE_AUTO_SHARE"),
-  pure: bool("OPENCODE_PURE"),
-  disableDefaultPlugins: bool("OPENCODE_DISABLE_DEFAULT_PLUGINS"),
-  disableEmbeddedWebUi: bool("OPENCODE_DISABLE_EMBEDDED_WEB_UI"),
-  disableExternalSkills: bool("OPENCODE_DISABLE_EXTERNAL_SKILLS"),
-  disableLspDownload: bool("OPENCODE_DISABLE_LSP_DOWNLOAD"),
+  autoShare: bool("CODEYMN_AUTO_SHARE"),
+  pure: bool("CODEYMN_PURE"),
+  disableDefaultPlugins: bool("CODEYMN_DISABLE_DEFAULT_PLUGINS"),
+  disableEmbeddedWebUi: bool("CODEYMN_DISABLE_EMBEDDED_WEB_UI"),
+  disableExternalSkills: bool("CODEYMN_DISABLE_EXTERNAL_SKILLS"),
+  disableLspDownload: bool("CODEYMN_DISABLE_LSP_DOWNLOAD"),
   disableClaudeCodePrompt: Config.all({
-    broad: bool("OPENCODE_DISABLE_CLAUDE_CODE"),
-    direct: bool("OPENCODE_DISABLE_CLAUDE_CODE_PROMPT"),
+    broad: bool("CODEYMN_DISABLE_CLAUDE_CODE"),
+    direct: bool("CODEYMN_DISABLE_CLAUDE_CODE_PROMPT"),
   }).pipe(Config.map((flags) => flags.broad || flags.direct)),
   disableClaudeCodeSkills: Config.all({
-    broad: bool("OPENCODE_DISABLE_CLAUDE_CODE"),
-    direct: bool("OPENCODE_DISABLE_CLAUDE_CODE_SKILLS"),
+    broad: bool("CODEYMN_DISABLE_CLAUDE_CODE"),
+    direct: bool("CODEYMN_DISABLE_CLAUDE_CODE_SKILLS"),
   }).pipe(Config.map((flags) => flags.broad || flags.direct)),
   enableExa: Config.all({
     experimental,
-    enabled: bool("OPENCODE_ENABLE_EXA"),
-    legacy: bool("OPENCODE_EXPERIMENTAL_EXA"),
+    enabled: bool("CODEYMN_ENABLE_EXA"),
+    legacy: bool("CODEYMN_EXPERIMENTAL_EXA"),
   }).pipe(Config.map((flags) => flags.experimental || flags.enabled || flags.legacy)),
   enableParallel: Config.all({
-    enabled: bool("OPENCODE_ENABLE_PARALLEL"),
-    legacy: bool("OPENCODE_EXPERIMENTAL_PARALLEL"),
+    enabled: bool("CODEYMN_ENABLE_PARALLEL"),
+    legacy: bool("CODEYMN_EXPERIMENTAL_PARALLEL"),
   }).pipe(Config.map((flags) => flags.enabled || flags.legacy)),
-  enableExperimentalModels: bool("OPENCODE_ENABLE_EXPERIMENTAL_MODELS"),
-  enableQuestionTool: bool("OPENCODE_ENABLE_QUESTION_TOOL"),
-  experimentalReferences: enabledByExperimental("OPENCODE_EXPERIMENTAL_REFERENCES"),
-  experimentalBackgroundSubagents: enabledByExperimental("OPENCODE_EXPERIMENTAL_BACKGROUND_SUBAGENTS"),
-  experimentalLspTy: bool("OPENCODE_EXPERIMENTAL_LSP_TY"),
-  experimentalLspTool: enabledByExperimental("OPENCODE_EXPERIMENTAL_LSP_TOOL"),
-  experimentalOxfmt: enabledByExperimental("OPENCODE_EXPERIMENTAL_OXFMT"),
-  experimentalPlanMode: enabledByExperimental("OPENCODE_EXPERIMENTAL_PLAN_MODE"),
-  experimentalCodeMode: enabledByExperimental("OPENCODE_EXPERIMENTAL_CODE_MODE"),
-  experimentalEventSystem: enabledByExperimental("OPENCODE_EXPERIMENTAL_EVENT_SYSTEM"),
-  experimentalWorkspaces: enabledByExperimental("OPENCODE_EXPERIMENTAL_WORKSPACES"),
-  experimentalIconDiscovery: enabledByExperimental("OPENCODE_EXPERIMENTAL_ICON_DISCOVERY"),
-  outputTokenMax: positiveInteger("OPENCODE_EXPERIMENTAL_OUTPUT_TOKEN_MAX"),
-  bashDefaultTimeoutMs: positiveInteger("OPENCODE_EXPERIMENTAL_BASH_DEFAULT_TIMEOUT_MS"),
-  experimentalNativeLlm: bool("OPENCODE_EXPERIMENTAL_NATIVE_LLM"),
-  experimentalWebSockets: bool("OPENCODE_EXPERIMENTAL_WEBSOCKETS"),
-  client: Config.string("OPENCODE_CLIENT").pipe(Config.withDefault("cli")),
+  enableExperimentalModels: bool("CODEYMN_ENABLE_EXPERIMENTAL_MODELS"),
+  enableQuestionTool: bool("CODEYMN_ENABLE_QUESTION_TOOL"),
+  experimentalReferences: enabledByExperimental("CODEYMN_EXPERIMENTAL_REFERENCES"),
+  experimentalBackgroundSubagents: enabledByExperimental("CODEYMN_EXPERIMENTAL_BACKGROUND_SUBAGENTS"),
+  experimentalLspTy: bool("CODEYMN_EXPERIMENTAL_LSP_TY"),
+  experimentalLspTool: enabledByExperimental("CODEYMN_EXPERIMENTAL_LSP_TOOL"),
+  experimentalOxfmt: enabledByExperimental("CODEYMN_EXPERIMENTAL_OXFMT"),
+  experimentalPlanMode: enabledByExperimental("CODEYMN_EXPERIMENTAL_PLAN_MODE"),
+  experimentalCodeMode: enabledByExperimental("CODEYMN_EXPERIMENTAL_CODE_MODE"),
+  experimentalEventSystem: enabledByExperimental("CODEYMN_EXPERIMENTAL_EVENT_SYSTEM"),
+  experimentalWorkspaces: enabledByExperimental("CODEYMN_EXPERIMENTAL_WORKSPACES"),
+  experimentalIconDiscovery: enabledByExperimental("CODEYMN_EXPERIMENTAL_ICON_DISCOVERY"),
+  outputTokenMax: positiveInteger("CODEYMN_EXPERIMENTAL_OUTPUT_TOKEN_MAX"),
+  bashDefaultTimeoutMs: positiveInteger("CODEYMN_EXPERIMENTAL_BASH_DEFAULT_TIMEOUT_MS"),
+  experimentalNativeLlm: bool("CODEYMN_EXPERIMENTAL_NATIVE_LLM"),
+  experimentalWebSockets: bool("CODEYMN_EXPERIMENTAL_WEBSOCKETS"),
+  client: Config.string("CODEYMN_CLIENT").pipe(Config.withDefault("cli")),
 }) {}
 
 export type Info = Context.Service.Shape<typeof Service>

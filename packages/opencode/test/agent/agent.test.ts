@@ -1,4 +1,4 @@
-import { afterEach, expect } from "bun:test"
+﻿import { afterEach, expect } from "bun:test"
 import { LayerNode } from "@opencode-ai/core/effect/layer-node"
 import { Cause, Effect, Exit, Layer } from "effect"
 import path from "path"
@@ -612,11 +612,11 @@ description: Permission skill.
         ),
       )
 
-      const home = process.env.OPENCODE_TEST_HOME
-      process.env.OPENCODE_TEST_HOME = test.directory
+      const home = process.env.CODEYMN_TEST_HOME
+      process.env.CODEYMN_TEST_HOME = test.directory
       yield* Effect.addFinalizer(() =>
         Effect.sync(() => {
-          process.env.OPENCODE_TEST_HOME = home
+          process.env.CODEYMN_TEST_HOME = home
         }),
       )
 

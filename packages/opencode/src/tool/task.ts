@@ -1,4 +1,4 @@
-import * as Tool from "./tool"
+﻿import * as Tool from "./tool"
 import DESCRIPTION from "./task.txt"
 import { ToolJsonSchema } from "./json-schema"
 import { SessionV1 } from "@opencode-ai/core/v1/session"
@@ -97,7 +97,7 @@ export const TaskTool = Tool.define(
       const runInBackground = params.background === true
       if (runInBackground && !flags.experimentalBackgroundSubagents) {
         return yield* Effect.fail(
-          new Error("Background subagents require OPENCODE_EXPERIMENTAL_BACKGROUND_SUBAGENTS=true"),
+          new Error("Background subagents require CODEYMN_EXPERIMENTAL_BACKGROUND_SUBAGENTS=true"),
         )
       }
 

@@ -1,4 +1,4 @@
-import { Schema } from "effect"
+﻿import { Schema } from "effect"
 import { NamedError } from "@opencode-ai/core/util/error"
 import { Process } from "@/util/process"
 import { IdeEvent } from "@opencode-ai/schema/ide-event"
@@ -30,7 +30,7 @@ export function ide() {
 }
 
 export function alreadyInstalled() {
-  return process.env["OPENCODE_CALLER"] === "vscode" || process.env["OPENCODE_CALLER"] === "vscode-insiders"
+  return process.env["CODEYMN_CALLER"] === "vscode" || process.env["CODEYMN_CALLER"] === "vscode-insiders"
 }
 
 export async function install(ide: (typeof SUPPORTED_IDES)[number]["name"]) {

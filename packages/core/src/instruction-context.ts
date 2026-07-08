@@ -1,4 +1,4 @@
-export * as InstructionContext from "./instruction-context"
+﻿export * as InstructionContext from "./instruction-context"
 
 import { Array, Effect, Layer, Schema } from "effect"
 import { isAbsolute, join, relative, sep } from "path"
@@ -45,7 +45,7 @@ const layer = Layer.effectDiscard(
         fromProject === "" || (fromProject !== ".." && !fromProject.startsWith(`..${sep}`) && !isAbsolute(fromProject))
       const discovered = new Set(
         yield* Effect.forEach(
-          Flag.OPENCODE_DISABLE_PROJECT_CONFIG || !insideProject
+          Flag.CODEYMN_DISABLE_PROJECT_CONFIG || !insideProject
             ? []
             : yield* fs.up({
                 targets: ["AGENTS.md"],

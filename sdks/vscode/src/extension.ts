@@ -1,4 +1,4 @@
-// This method is called when your extension is deactivated
+﻿// This method is called when your extension is deactivated
 export function deactivate() {}
 
 import * as vscode from "vscode"
@@ -57,7 +57,7 @@ export function activate(context: vscode.ExtensionContext) {
       },
       env: {
         _EXTENSION_OPENCODE_PORT: port.toString(),
-        OPENCODE_CALLER: "vscode",
+        CODEYMN_CALLER: "vscode",
       },
     })
 
