@@ -1,101 +1,32 @@
 <p align="center">
-  <a href="https://Codeymn.ai">
-    <picture>
-      <source srcset="packages/console/app/src/asset/logo-ornate-dark.svg" media="(prefers-color-scheme: dark)">
-      <source srcset="packages/console/app/src/asset/logo-ornate-light.svg" media="(prefers-color-scheme: light)">
-      <img src="packages/console/app/src/asset/logo-ornate-light.svg" alt="Codeymn logo">
-    </picture>
+  <a href="https://github.com/rizqinrr/codeymn">
+    <img src="packages/console/app/src/asset/logo-ornate-light.svg" alt="Codeymn logo" width="200">
   </a>
 </p>
-<p align="center">The open source AI coding agent.</p>
-<p align="center">
-  <a href="https://Codeymn.ai/discord"><img alt="Discord" src="https://img.shields.io/discord/1391832426048651334?style=flat-square&label=discord" /></a>
-  <a href="https://www.npmjs.com/package/Codeymn-ai"><img alt="npm" src="https://img.shields.io/npm/v/Codeymn-ai?style=flat-square" /></a>
-  <a href="https://github.com/anomalyco/Codeymn/actions/workflows/publish.yml"><img alt="Build status" src="https://img.shields.io/github/actions/workflow/status/anomalyco/Codeymn/publish.yml?style=flat-square&branch=dev" /></a>
-</p>
+
+<p align="center"><strong>Codeymn</strong> â€” A fork of <a href="https://github.com/anomalyco/opencode">OpenCode</a>, the open source AI coding agent.</p>
 
 <p align="center">
-  <a href="README.md">English</a> |
-  <a href="README.zh.md">????</a> |
-  <a href="README.zht.md">????</a> |
-  <a href="README.ko.md">???</a> |
-  <a href="README.de.md">Deutsch</a> |
-  <a href="README.es.md">Español</a> |
-  <a href="README.fr.md">Français</a> |
-  <a href="README.it.md">Italiano</a> |
-  <a href="README.da.md">Dansk</a> |
-  <a href="README.ja.md">???</a> |
-  <a href="README.pl.md">Polski</a> |
-  <a href="README.ru.md">???????</a> |
-  <a href="README.bs.md">Bosanski</a> |
-  <a href="README.ar.md">???????</a> |
-  <a href="README.no.md">Norsk</a> |
-  <a href="README.br.md">Português (Brasil)</a> |
-  <a href="README.th.md">???</a> |
-  <a href="README.tr.md">Türkçe</a> |
-  <a href="README.uk.md">??????????</a> |
-  <a href="README.bn.md">?????</a> |
-  <a href="README.gr.md">????????</a> |
-  <a href="README.vi.md">Ti?ng Vi?t</a>
+  <a href="https://github.com/rizqinrr/codeymn"><img alt="GitHub Repo" src="https://img.shields.io/badge/github-codeymn-black?style=flat-square&logo=github" /></a>
 </p>
-
-[![Codeymn Terminal UI](packages/web/src/assets/lander/screenshot.png)](https://Codeymn.ai)
 
 ---
 
 ### Installation
 
 ```bash
-# YOLO
-curl -fsSL https://Codeymn.ai/install | bash
-
-# Package managers
-npm i -g Codeymn-ai@latest        # or bun/pnpm/yarn
-scoop install Codeymn             # Windows
-choco install Codeymn             # Windows
-brew install anomalyco/tap/Codeymn # macOS and Linux (recommended, always up to date)
-brew install Codeymn              # macOS and Linux (official brew formula, updated less)
-sudo pacman -S Codeymn            # Arch Linux (Stable)
-paru -S Codeymn-bin               # Arch Linux (Latest from AUR)
-mise use -g Codeymn               # Any OS
-nix run nixpkgs#Codeymn           # or github:anomalyco/Codeymn for latest dev branch
+# Install from source
+git clone https://github.com/rizqinrr/codeymn.git
+cd codeymn
+bun install && bun dev
 ```
 
 > [!TIP]
-> Remove versions older than 0.1.x before installing.
+> This is a development fork. For the original project, visit [https://github.com/anomalyco/opencode](https://github.com/anomalyco/opencode).
 
 ### Desktop App (BETA)
 
-Codeymn is also available as a desktop application. Download directly from the [releases page](https://github.com/anomalyco/Codeymn/releases) or [Codeymn.ai/download](https://Codeymn.ai/download).
-
-| Platform              | Download                           |
-| --------------------- | ---------------------------------- |
-| macOS (Apple Silicon) | `Codeymn-desktop-mac-arm64.dmg`   |
-| macOS (Intel)         | `Codeymn-desktop-mac-x64.dmg`     |
-| Windows               | `Codeymn-desktop-windows-x64.exe` |
-| Linux                 | `.deb`, `.rpm`, or `.AppImage`     |
-
-```bash
-# macOS (Homebrew)
-brew install --cask Codeymn-desktop
-# Windows (Scoop)
-scoop bucket add extras; scoop install extras/Codeymn-desktop
-```
-
-#### Installation Directory
-
-The install script respects the following priority order for the installation path:
-
-1. `$CODEYMN_INSTALL_DIR` - Custom installation directory
-2. `$XDG_BIN_DIR` - XDG Base Directory Specification compliant path
-3. `$HOME/bin` - Standard user binary directory (if it exists or can be created)
-4. `$HOME/.Codeymn/bin` - Default fallback
-
-```bash
-# Examples
-CODEYMN_INSTALL_DIR=/usr/local/bin curl -fsSL https://Codeymn.ai/install | bash
-XDG_BIN_DIR=$HOME/.local/bin curl -fsSL https://Codeymn.ai/install | bash
-```
+Download from the original OpenCode project: [https://github.com/anomalyco/opencode/releases](https://github.com/anomalyco/opencode/releases)
 
 ### Agents
 
@@ -110,11 +41,9 @@ Codeymn includes two built-in agents you can switch between with the `Tab` key.
 Also included is a **general** subagent for complex searches and multistep tasks.
 This is used internally and can be invoked using `@general` in messages.
 
-Learn more about [agents](https://Codeymn.ai/docs/agents).
-
 ### Documentation
 
-For more info on how to configure Codeymn, [**head over to our docs**](https://Codeymn.ai/docs).
+For more info on how to configure Codeymn, please refer to the original project's documentation: [https://github.com/anomalyco/opencode](https://github.com/anomalyco/opencode)
 
 ### Contributing
 
@@ -126,4 +55,4 @@ If you are working on a project that's related to Codeymn and is using "Codeymn"
 
 ---
 
-**Join our community** [Discord](https://discord.gg/Codeymn) | [X.com](https://x.com/Codeymn)
+**Original OpenCode community:** [Discord](https://discord.gg/opencode) | [X.com](https://x.com/opencode)
