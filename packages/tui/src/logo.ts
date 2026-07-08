@@ -1,11 +1,8 @@
-export const logo = {
-  left: ["                     ", "\x1b[34m█\x1b[0m▀▀█ █▀▀█ █▀▀▄ █▀▀  █   █ █  █ █", "\x1b[34m█\x1b[0m   █▀▀█ █  █ █▀▀   █ █ █ █ █ █ █", "\x1b[34m█\x1b[0m▀▀█ ▀▀▀▀ ▀  ▀ ▀▀▀    █   █   █ █"],
-  right: ["      ▄    ", "█▀▀▀ █  █ █  █ █  █", "█    █  █ █  █ █  █", "▀▀▀▀ ▀▀▀▀ ▀▀▀▀ ▀▀▀▀"],
-}
+export const logo = "codeymn"
 
 export const go = {
-  left: ["    ", "\x1b[34m█\x1b[0m▀▀█", "\x1b[34m█\x1b[0m_^█", "▀▀▀▀"],
-  right: ["    ", "█▀▀█", "█__█", "▀▀▀▀"],
+  left: [""],
+  right: [""],
 }
 
 export const marks = "_^~,"
